@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Глэмпин "В лесу у озера"</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+
+            <div class="header__wrapper">
+                <a class="header__logo" href="#" data-scroll="#intro">
+                    <img class="header__img" src="assets/img/logo.svg" alt="Логотип гэмпинга с изображение палатки,леса, костра и озера">
+                </a>
+
+                <nav class="nav" id="nav">
+                    <a class="nav__link" href="#" data-scroll="#about-glamping">О глэмпинге</a>
+                    <a class="nav__link" href="#" data-scroll="#territory">Номера и территория</a>
+                    <a class="nav__link" href="#" data-scroll="#prices">Цены</a>
+                    <a class="nav__link" href="#" data-scroll="#entertainment">Досуг</a>
+                    <a class="nav__link" href="#" data-scroll="#faq">Вопросы</a>
+                    <a class="nav__link" href="#" data-scroll="#contacts">Контакты</a>
+                </nav>
+
+                <button class="burger" type="button" id="navToggle">
+                    <span class="burger__line">Меню</span>
+                    <span class="burger__line">Меню</span>
+                    <span class="burger__line">Меню</span>
+                    <span class="burger__line">Меню</span>
+                </button>
+            </div><!-- /.header__wrapper -->
+
+        </div><!-- /.container -->
+    </header>
+
+
+    <!-- Main -->
+    <main>
+
+        <!-- Intro -->
+        <div class="intro" id="intro">
+            <div class="container">
+
+                <div class="intro__wrapper">
+                    <div class="intro__content">
+                        <p class="intro__suptitle">Глэмпинг</p>
+                        <h1 class="intro__title">&bdquo;В&nbsp;лесу у&nbsp;озера&ldquo;</h1>
+                    </div>
+
+                    <div class="booking-form booking-form--variation">
+                        <form class="form" action="/" method="POST">
+                            <label class="visually-hidden" for="form-entry">Заезд</label>
+                            <input class="input input--calendar" id="form-entry" type="text" placeholder="Заезд" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" required/>
+
+                            <label class="visually-hidden" for="form-exit">Выезд</label>
+                            <input class="input input--calendar" id="form-exit" type="text" placeholder="Выезд" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" required/>
+
+                            <button class="btn btn--size-xl" type="button">Проверить наличие</button>
+                        </form>
+                    </div>
+                </div><!-- /.intro__wrapper -->
+
+            </div><!-- /.container -->
+        </div><!-- /.intro -->
+
+
+        <!-- Section variation -->
+        <section class="section section--accent section--variation">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Бронирование</h2>
+                </div>
+
+                <div class="booking-form">
+                    <form class="form" action="/" method="POST">
+                        <label class="visually-hidden" for="form-entry-variation">Заезд</label>
+                        <input class="input input--calendar" id="form-entry-variation" type="text" placeholder="Заезд" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+
+                        <label class="visually-hidden" for="form-exit-variation">Выезд</label>
+                        <input class="input input--calendar" id="form-exit-variation" type="text" placeholder="Выезд" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+
+                        <button class="btn btn--size-xl" type="button">Проверить наличие</button>
+                    </form>
+                </div>
+            </div><!-- /.container -->
+        </section>
+
+
+        <!-- About-glamping -->
+        <section class="section" id="about-glamping" data-scrollspy="#about-glamping">
+            <div class="container">
+
+                <div class="section__header">
+                    <h2 class="section__title">О глэмпинге</h2>
+                    <p class="section__description">&laquo;В&nbsp;лесу у&nbsp;озера&raquo; &mdash; это место для любителей природы, в котором можно не только отдохнуть с комфортом от городского шума и суеты, но и просто насладиться красотой алтайской&nbsp;природы.</p>
+                </div>
+
+                <div class="about-glamping">
+                    <div class="about-glamping__wrapper">
+
+                        <div class="about-glamping__col">
+                            <div class="about-glamping__img">
+                                <picture>
+                                    <source srcset="assets/img/about/about-photo-1-small@1x.webp 1x, assets/img/about/about-photo-1-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                                    <source srcset="assets/img/about/about-photo-1-small@1x.jpg 1x, assets/img/about/about-photo-1-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+
+                                    <source srcset="assets/img/about/about-photo-1@1x.webp 1x, assets/img/about/about-photo-1@2x.webp 2x" type="image/webp">
+                                    <img class="img" src="assets/img/about/about-photo-1@1x.jpg" srcset="assets/img/about/about-photo-1@2x.jpg 2x" alt="Девушка на берегу озера">
+                                </picture>
+                            </div>
+                            <div class="about-glamping__content">
+                                <p>В нашем лагере каждый гость сможет выбрать подходящий досуг: прогулки по лесу, прокат велосипедов, настольные игры, водные развлечения и это только малая часть того, что мы можем вам предложить.</p>
+                                <a class="btn btn--size-xs btn--block-light" href="#" data-scroll="#entertainment">Подробнее</a>
+                            </div>
+                        </div><!-- /.about-glamping__col -->
+
+                        <div class="about-glamping__col about-glamping__col--reverse">
+                            <div class="about-glamping__img">
+                                <picture>
+                                    <source srcset="assets/img/about/about-photo-2-small@1x.webp 1x, assets/img/about/about-photo-2-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                                    <source srcset="assets/img/about/about-photo-2-small@1x.jpg 1x, assets/img/about/about-photo-2-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+
+                                    <source srcset="assets/img/about/about-photo-2@1x.webp" type="image/webp">
+                                    <img class="img" src="assets/img/about/about-photo-2@1x.jpg" srcset="assets/img/about/about-photo-2@2x.jpg 2x" alt="Компания молодых людей отдыхает в глэмпинге">
+                                </picture>
+                            </div>
+                            <div class="about-glamping__content">
+                                <p>Походная романтика без дискомфорта, невероятные закаты, костер под звездным небом, ароматные блюда &mdash; все это в &laquo;В&nbsp;лесу у&nbsp;озера&raquo;</p>
+                                <p>Приезжайте в гости с семьей или друзьями, насладитесь отдыхом и мы уверены, вы еще не раз к нам вернетесь!</p>
+                            </div>
+                        </div><!-- /.about-glamping__col -->
+
+                    </div><!-- /.about-glamping__wrapper -->
+                </div><!-- /.about-glamping -->
+
+            </div><!-- /.container -->
+        </section>
+
+
+        <!-- Territory -->
+        <section class="section section--accent" id="territory" data-scrollspy="#territory">
+            <div class="container">
+
+                <div class="section__header">
+                    <h2 class="section__title">Номера и территория</h2>
+                    <p class="section__description">На территории расположено 10 уютных меблированных шатров, в который есть все необходимое для комфортного отдыха.</p>
+                </div>
+
+                <div class="territory">
+                    <div class="territory__wrapper">
+                        <div class="territory__col">
+                            <h3 class="territory__title">Комплектация шатра</h3>
+                            <ul class="territory__list">
+                                <li>Двухспальная кровать;</li>
+                                <li>Двухспальный диван - кровать;</li>
+                                <li>Места для хранения (шкаф, тумбы);</li>
+                                <li>Камин - печь на дровах;</li>
+                                <li>Микроволновая печь;</li>
+                                <li>Небольшой холодильник;</li>
+                                <li>Розетки;</li>
+                                <li>Туалет и умывальник;</li>
+                                <li>Полотенца</li>
+                            </ul>
+                        </div>
+
+                        <div class="territory__col">
+                            <h3 class="territory__title">На территории</h3>
+                            <ul class="territory__list">
+                                <li>Бесплатный Wi-Fi в зонах общего пользования;</li>
+                                <li>Вблизи шатров расположено теплое здание, оборудованное удобствами:
+                                    <ul class="territory__list-inserted">
+                                        <li>10 душевыми кабинками</li>
+                                        <li>туалетом</li>
+                                        <li>небольшой прачечной (стиральная машинка, утюг)</li>
+                                    </ul>
+                                </li>
+                                <li>Общий шатер с верандой
+                                    <ul class="territory__list-inserted">
+                                        <li>обеденные зоны (где подают завтра, обед, ужин)</li>
+                                        <li>мини - кухня</li>
+                                        <li>небольшая библиотека</li>
+                                        <li>уединенные места для работы</li>
+                                    </ul>
+                                </li>
+                                <li>Баня;</li>
+                                <li>Общая костровая зона  и зона барбекю</li>
+                            </ul>
+                        </div>
+                    </div><!-- /.territory__wrapper -->
+
+                    <div class="territory__gallery">
+                        <div class="territory__item">
+                            <picture>
+                                <source srcset="assets/img/territory-gallery/territory-gallery-photo-1-small@1x.webp 1x, assets/img/territory-gallery/territory-gallery-photo-1-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                                <source srcset="assets/img/territory-gallery/territory-gallery-photo-1-small@1x.jpg 1x, assets/img/territory-gallery/territory-gallery-photo-1-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+
+                                <source srcset="assets/img/territory-gallery/territory-gallery-photo-1@1x.webp 1x, assets/img/territory-gallery/territory-gallery-photo-1@2x.webp 2x" type="image/webp">
+                                <img class="img" src="assets/img/territory-gallery/territory-gallery-photo-1@1x.jpg" srcset="assets/img/territory-gallery/territory-gallery-photo-1@2x.jpg 2x" alt="Обустройство одного из шатров">
+                            </picture>
+                        </div>
+
+                        <div class="territory__item">
+                            <picture>
+                                <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+
+                                <source srcset="assets/img/territory-gallery/territory-gallery-photo-2@1x.webp 1x, assets/img/territory-gallery/territory-gallery-photo-2@2x.webp 2x" type="image/webp">
+                                <img class="img" src="assets/img/territory-gallery/territory-gallery-photo-2@1x.jpg" srcset="assets/img/territory-gallery/territory-gallery-photo-2@2x.jpg 2x" alt="Примеры блюд местного ресторана">
+                            </picture>
+                        </div>
+
+                        <div class="territory__item">
+                            <picture>
+                                <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+
+                                <source srcset="assets/img/territory-gallery/territory-gallery-photo-3@1x.webp 1x, assets/img/territory-gallery/territory-gallery-photo-3@2x.webp 2x" type="image/webp">
+                                <img class="img" src="assets/img/territory-gallery/territory-gallery-photo-3@1x.jpg" srcset="assets/img/territory-gallery/territory-gallery-photo-3@2x.jpg 2x" alt="Обеденная зона с мини-кухней">
+                            </picture>
+                        </div>
+
+                        <div class="territory__item">
+                            <picture>
+                                <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+
+                                <source srcset="assets/img/territory-gallery/territory-gallery-photo-4@1x.webp 1x, assets/img/territory-gallery/territory-gallery-photo-4@2x.webp 2x" type="image/webp">
+                                <img class="img" src="assets/img/territory-gallery/territory-gallery-photo-4@1x.jpg" srcset="assets/img/territory-gallery/territory-gallery-photo-4@2x.jpg 2x" alt="Обустройство внутри санузла">
+                            </picture>
+                        </div>
+
+                        <div class="territory__item">
+                            <picture>
+                                <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+
+                                <source srcset="assets/img/territory-gallery/territory-gallery-photo-5@1x.webp 1x, assets/img/territory-gallery/territory-gallery-photo-5@2x.webp 2x" type="image/webp">
+                                <img class="img" src="assets/img/territory-gallery/territory-gallery-photo-5@1x.jpg" srcset="assets/img/territory-gallery/territory-gallery-photo-5@2x.jpg 2x" alt="Четвероногий друг отдыхает в кресле">
+                            </picture>
+                        </div>
+
+                        <div class="territory__item">
+                            <picture>
+                                <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+
+                                <source srcset="assets/img/territory-gallery/territory-gallery-photo-6@1x.webp 1x, assets/img/territory-gallery/territory-gallery-photo-6@2x.webp 2x" type="image/webp">
+                                <img class="img" src="assets/img/territory-gallery/territory-gallery-photo-6@1x.jpg" srcset="assets/img/territory-gallery/territory-gallery-photo-6@2x.jpg 2x" alt="Номер-шатер на территории глэмпинга">
+                            </picture>
+                        </div>
+                    </div><!-- /.territory__gallery -->
+                </div><!-- /.territory -->
+
+            </div><!-- /.container -->
+        </section>
+
+
+        <!-- Prices -->
+        <section class="section" id="prices" data-scrollspy="#prices">
+            <div class="container">
+
+                <div class="section__header">
+                    <h2 class="section__title">Цены</h2>
+                </div>
+
+                <div class="prices">
+                    <div class="prices__table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Номер</th>
+                                    <th>Понедельник-пятница</th>
+                                    <th>Выходные дни</th>
+                                    <th>Праздничные дни</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2">Двухместный шатер</td>
+                                    <td class="nowrap">7500 руб/сут.</td>
+                                    <td class="nowrap">8500 руб/сут.</td>
+                                    <td class="nowrap">10500 руб/сут.</td>
+                                </tr>
+                                <tr>
+                                    <td class="center nowrap">6500 руб/сут.&ast;</td>
+                                    <td>-</td>
+                                    <td class="nowrap">9500 руб/сут.&ast;</td>
+                                </tr>
+                                <tr>
+                                    <td>В каждом номере допускается доп. расположение 1&nbsp;-&nbsp;2 гостей (спальное место диван - кровать)</td>
+                                    <td class="nowrap" colspan="3">&plus; 2000 руб/сут. за человека</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><!-- prices__table -->
+
+
+                    <ul class="prices__list">
+                        <li class="prices__item">
+                            &ast;Цена от 4 ночей
+                        </li>
+                        <li class="prices__item">
+                            Максимальная вместимость шатра 4 взрослых и 1 ребенок до 3 лет.
+                        </li>
+                        <li class="prices__item">
+                            Дети до 3 лет бесплатно (по желанию возможна установка в номер кроватки&nbsp;-&nbsp;манежа).
+                        </li>
+                        <li class="prices__item">
+                            Заезд в 14:00. Выезд до 12:00.
+                        </li>
+                        <li class="prices__item">
+                            В стоимость входит 3-х разовое питание по меню.
+                        </li>
+                    </ul>
+                </div><!-- /.prices -->
+
+            </div><!-- /.container -->
+        </section>
+
+
+        <!-- Entertainment -->
+        <section class="section section--accent" id="entertainment" data-scrollspy="#entertainment">
+            <div class="container">
+
+                <div class="section__header">
+                    <h2 class="section__title">Досуг</h2>
+                    <p class="section__description">Ниже вы можете ознакомиться с различными видами досуга</p>
+                </div>
+
+                <div class="entertainment">
+                    <div class="entertainment__wrapper">
+                        <h3 class="entertainment__title">Входят в стоимость</h3>
+                        <ul class="entertainment__list" data-slider>
+                            <li>
+                                <div class="entertainment__item">
+                                    <div class="entertainment__content">
+                                        <h3 class="entertainment__subtitle">Утренняя йога</h3>
+                                        <div class="entertainment__text">
+                                            <p>Каждое утро наши гости могут посетить занятие по йоге, под руководством опытного инструктора пробудить свое тело и зарядиться энергией на весь день.</p>
+                                            <p>Анастасия преподаёт уже более 7 лет, имеет международные сертификаты, регулярно посещает различные семинары и повышает свою квалификацию.</p>
+                                        </div>
+                                    </div>
+                                    <div class="entertainment__photo entertainment__photo--included">
+                                        <picture>
+                                            <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+
+                                            <source srcset="assets/img/entertainment/entertainment-included-1@1x.webp 1x, assets/img/entertainment/entertainment-included-1@2x.webp 2x" type="image/webp">
+                                            <img src="assets/img/entertainment/entertainment-included-1@1x.jpg" srcset="assets/img/entertainment/entertainment-included-1@2x.jpg 2x" alt="Анастасия - преподаватель йоги в глэмпинге">
+                                        </picture>
+                                    </div>
+                                </div><!-- /.entertainment__item -->
+                            </li>
+
+                            <li>
+                                <div class="entertainment__item">
+                                    <div class="entertainment__content">
+                                        <h3 class="entertainment__subtitle">Прогулки на SUP-борде</h3>
+                                        <div class="entertainment__text">
+                                            <p>Каждый гость имеет возможность <b>без ограничений</b> пользоваться SUP-бордами</p>
+                                            <p>Для новичков есть возможность взять бесплатный урок с инструктором.</p>
+                                            <p>3 раза в неделю организованы бесплатные прогулки на SUP-бордах по окрестностям озера. Прогулка подойдет для любого уровня подготовки.</p>
+                                        </div>
+                                    </div>
+                                    <div class="entertainment__photo entertainment__photo--included">
+                                        <picture>
+                                            <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+
+                                            <source srcset="assets/img/entertainment/entertainment-included-2@1x.webp 1x, assets/img/entertainment/entertainment-included-2@2x.webp 2x" type="image/webp">
+                                            <img src="assets/img/entertainment/entertainment-included-2@1x.jpg" srcset="assets/img/entertainment/entertainment-included-2@2x.jpg 2x" alt="Прогулка гостей глэмпинга на SUP-борде">
+                                        </picture>
+                                    </div>
+                                </div><!-- /.entertainment__item -->
+                            </li>
+
+                            <li>
+                                <div class="entertainment__item">
+                                    <div class="entertainment__content">
+                                        <h3 class="entertainment__subtitle">Пешие прогулки</h3>
+                                        <div class="entertainment__text">
+                                            <p>В окрестностях глэмпинга есть множество маршрутов для любителей отдыха на свежем воздухе. В доступе для гостей палки для скандинавской ходьбы</p>
+                                        </div>
+                                    </div>
+                                    <div class="entertainment__photo entertainment__photo--included">
+                                        <picture>
+                                            <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+
+                                            <source srcset="assets/img/entertainment/entertainment-included-3@1x.webp 1x, assets/img/entertainment/entertainment-included-3@2x.webp 2x" type="image/webp">
+                                            <img src="assets/img/entertainment/entertainment-included-3@1x.jpg" srcset="assets/img/entertainment/entertainment-included-3@2x.jpg 2x" alt="Пешая прогулка наших гостей вместе с четвероногими друзьями">
+                                        </picture>
+                                    </div>
+                                </div><!-- /.entertainment__item -->
+                            </li>
+
+                            <li>
+                                <div class="entertainment__item">
+                                    <div class="entertainment__content">
+                                        <h3 class="entertainment__subtitle">Настольные игры</h3>
+                                        <div class="entertainment__text">
+                                            <p>В общей зоне имеется игровой уголок, где представлено большое разнообразие настольных игр, здесь любая компания найдет что-то увлекательное.</p>
+                                            <p>Общая зона зачастую становится местом, где наши гости находят новые знакомства, объединяются в команды и весело проводят время.</p>
+                                        </div>
+                                    </div>
+                                    <div class="entertainment__photo entertainment__photo--included">
+                                        <picture>
+                                            <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+
+                                            <source srcset="assets/img/entertainment/entertainment-included-4@1x.webp 1x, assets/img/entertainment/entertainment-included-4@2x.webp 2x" type="image/webp">
+                                            <img src="assets/img/entertainment/entertainment-included-4@1x.jpg" srcset="assets/img/entertainment/entertainment-included-4@2x.jpg 2x" alt="Гости глэмпинга за увлекательной настольной игрой">
+                                        </picture>
+                                    </div>
+                                </div><!-- /.entertainment__item -->
+                            </li>
+
+                        </ul><!-- /.entertainment__list -->
+                    </div><!-- /.entertainment__wrapper -->
+
+                    <div class="entertainment__wrapper">
+                        <div class="entertainment__title">Дополнительно</div>
+                        <ul class="entertainment__list" data-slider>
+                            <li>
+                                <div class="entertainment__item entertainment__item--revers">
+                                    <div class="entertainment__content">
+                                        <h3 class="entertainment__subtitle">Прогулки на квадроциклах</h3>
+                                        <div class="entertainment__text">
+                                            <p>На выбор предоставлено три разных по сложности и длительности маршрута, каждый из которых подарит вам море ярких впечатлений.</p>
+                                            <a class="btn btn--size-xs btn--block-light" href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="entertainment__photo entertainment__photo--extra">
+                                        <picture>
+                                            <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+
+                                            <source srcset="assets/img/entertainment/entertainment-extra-1@1x.webp 1x, assets/img/entertainment/entertainment-extra-1@2x.webp 2x" type="image/webp">
+                                            <img src="assets/img/entertainment/entertainment-extra-1@1x.jpg" srcset="assets/img/entertainment/entertainment-extra-1@2x.jpg 2x" alt="Сторож лагеря на прогулке на квадроциклах">
+                                        </picture>
+                                    </div>
+                                </div><!-- /.entertainment__item -->
+                            </li>
+
+                            <li>
+                                <div class="entertainment__item entertainment__item--revers">
+                                    <div class="entertainment__content">
+                                        <h3 class="entertainment__subtitle">Велопрокат</h3>
+                                        <div class="entertainment__text">
+                                            <span>Прокат:</span>
+                                            <ul>
+                                                <li>до 1 часа - 50 руб.</li>
+                                                <li>от 1 часа и более - 100 руб.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="entertainment__photo entertainment__photo--extra">
+                                        <picture>
+                                            <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+
+                                            <source srcset="assets/img/entertainment/entertainment-extra-2@1x.webp 1x, assets/img/entertainment/entertainment-extra-2@2x.webp 2x" type="image/webp">
+                                            <img src="assets/img/entertainment/entertainment-extra-2@1x.jpg" srcset="assets/img/entertainment/entertainment-extra-2@2x.jpg 2x" alt="Девушка наслаждается прекрасными видами окрестностей">
+                                        </picture>
+                                    </div>
+                                </div><!-- /.entertainment__item -->
+                            </li>
+
+                            <li>
+                                <div class="entertainment__item entertainment__item--revers">
+                                    <div class="entertainment__content">
+                                        <h3 class="entertainment__subtitle">Конные прогулки</h3>
+                                        <div class="entertainment__text">
+                                            <p>Прогулки верхом - один из лучших видов активного отдыха.</p>
+                                            <p>Насладитесь горными пейзажами под руководством опытного инструктора.</p>
+                                            <a class="btn btn--size-xs btn--block-light" href="#">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="entertainment__photo entertainment__photo--extra">
+                                        <picture>
+                                            <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+
+                                            <source srcset="assets/img/entertainment/entertainment-extra-3@1x.webp 1x, assets/img/entertainment/entertainment-extra-3@2x.webp 2x" type="image/webp">
+                                            <img src="assets/img/entertainment/entertainment-extra-3@1x.jpg" srcset="assets/img/entertainment/entertainment-extra-3@2x.jpg 2x" alt="Инструктор по верховой езде ухаживет за любимицей лагеря - Альфой">
+                                        </picture>
+                                    </div>
+                                </div><!-- /.entertainment__item -->
+                            </li>
+
+                        </ul><!-- /.entertainment__list-->
+                    </div><!-- /.entertainment__wrapper -->
+                </div><!-- /.entertainment -->
+            </div><!-- /.container -->
+        </section>
+
+
+        <!-- Gallery -->
+        <section class="section">
+
+            <div class="section__header">
+                <h2 class="section__title">Галерея</h2>
+                <p class="section__description">Почувствуйте атмосферу отдыха в &bdquo;В&nbsp;лесу&nbsp;у&nbsp;озера&ldquo;</p>
+            </div>
+
+            <div class="gallery">
+                <div class="gallery__wrapper">
+                    <div class="gallery__item">
+                        <picture>
+                            <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+
+                            <source srcset="assets/img/gallery/gallery-photo-1@1x.webp 1x, assets/img/gallery/gallery-photo-1@2x.webp 2x" type="image/webp">
+                            <img class="gallery__photo" src="assets/img/gallery/gallery-photo-1@1x.jpg" srcset="assets/img/gallery/gallery-photo-1@2x.jpg 2x" alt="Прогулка на квадроциклах">
+                        </picture>
+                    </div>
+
+                    <div class="gallery__item">
+                        <picture>
+                            <source srcset="assets/img/gallery/gallery-photo-2-small@1x.webp 1x, assets/img/gallery/gallery-photo-2-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                            <source srcset="assets/img/gallery/gallery-photo-2-small@1x.jpg 1x, assets/img/gallery/gallery-photo-2-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+
+                            <source srcset="assets/img/gallery/gallery-photo-2@1x.webp 1x, assets/img/gallery/gallery-photo-2@2x.webp 2x" type="image/webp">
+                            <img class="gallery__photo" src="assets/img/gallery/gallery-photo-2@1x.jpg" srcset="assets/img/gallery/gallery-photo-2@2x.jpg 2x" alt="Девушка готовит еду на гриле в походе">
+                        </picture>
+                    </div>
+
+                    <div class="gallery__item">
+                        <picture>
+                            <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+
+                            <source srcset="assets/img/gallery/gallery-photo-3@1x.webp 1x, assets/img/gallery/gallery-photo-3@2x.webp 2x" type="image/webp">
+                            <img class="gallery__photo" src="assets/img/gallery/gallery-photo-3@1x.jpg" srcset="assets/img/gallery/gallery-photo-3@2x.jpg 2x" alt="Молодая пара наслаждается отдыхом в общей зоне на территории глэмпинга">
+                        </picture>
+                    </div>
+
+                    <div class="gallery__item">
+                        <picture>
+                            <source srcset="assets/img/gallery/gallery-photo-4-small@1x.webp 1x, assets/img/gallery/gallery-photo-4-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                            <source srcset="assets/img/gallery/gallery-photo-4-small@1x.jpg 1x, assets/img/gallery/gallery-photo-4-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+
+                            <source srcset="assets/img/gallery/gallery-photo-4@1x.webp 1x, assets/img/gallery/gallery-photo-4@2x.webp 2x" type="image/webp">
+                            <img class="gallery__photo" src="assets/img/gallery/gallery-photo-4@1x.jpg" srcset="assets/img/gallery/gallery-photo-4@2x.jpg 2x" alt="Ароматный шашлык на мангале">
+                        </picture>
+                    </div>
+
+                    <div class="gallery__item">
+                        <picture>
+                            <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+
+                            <source srcset="assets/img/gallery/gallery-photo-5@1x.webp 1x, assets/img/gallery/gallery-photo-5@2x.webp 2x" type="image/webp">
+                            <img class="gallery__photo" src="assets/img/gallery/gallery-photo-5@1x.jpg" srcset="assets/img/gallery/gallery-photo-5@2x.jpg 2x" alt="Глинтвейн, приготовленный на костре">
+                        </picture>
+                    </div>
+
+                    <div class="gallery__item">
+                        <picture>
+                            <source srcset="assets/img/gallery/gallery-photo-6-small@1x.webp 1x, assets/img/gallery/gallery-photo-6-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                            <source srcset="assets/img/gallery/gallery-photo-6-small@1x.jpg 1x, assets/img/gallery/gallery-photo-6-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+
+                            <source srcset="assets/img/gallery/gallery-photo-6@1x.webp 1x, assets/img/gallery/gallery-photo-6@2x.webp 2x" type="image/webp">
+                            <img class="gallery__photo" src="assets/img/gallery/gallery-photo-6@1x.jpg" srcset="assets/img/gallery/gallery-photo-6@2x.jpg 2x" alt="Уютные вечера в глэмпинге">
+                        </picture>
+                    </div>
+                </div><!-- /.gallery__wrapper -->
+
+                <div class="gallery__link">
+                    <a class="btn btn--size-xs btn--block-light" href="https://www.instagram.com/" target="_blank">Смотреть больше</a>
+                </div>
+
+            </div><!-- /.gallery -->
+        </section>
+
+
+        <!-- Faq -->
+        <section class="section section--accent" id="faq" data-scrollspy="#faq">
+            <div class="container">
+
+                <div class="section__header">
+                    <h2 class="section__title">Часто задаваемые вопросы</h2>
+                    <p class="section__description">Здесь вы можете найти ответы на часто задаваемые вопросы</p>
+                </div>
+
+                <div class="faq reversal">
+                    <div class="faq__item" data-collapse="#faq_1">
+                        <div class="faq__header">
+                            <picture>
+                                <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+
+                                <source srcset="assets/img/faq/car@1x.webp 1x, assets/img/faq/car@2x.webp 2x" type="image/webp">
+                                <img class="faq__icon" src="assets/img/faq/car@1x.png" srcset="assets/img/faq/car@2x.png 2x" width="32" alt="Иконка автомобиля">
+                            </picture>
+                            <h3 class="faq__title">Есть ли в глэмпинге стоянка для автомобилей?</h3>
+                        </div>
+                        <div class="faq__content" id="faq_1">
+                            <p>На территории находится охраняемая стоянка и наши гости могут припарковать на ней автомобиль на все время прибывания в лагере. Проезд осуществляется при предъявлении талона на аренду шатра.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq__item" data-collapse="#faq_2">
+                        <div class="faq__header">
+                            <picture>
+                                <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+
+                                <source srcset="assets/img/faq/dog@1x.webp 1x, assets/img/faq/dog@2x.webp 2x" type="image/webp">
+                                <img class="faq__icon" src="assets/img/faq/dog@1x.png" srcset="assets/img/faq/dog@2x.png 2x" width="32" alt="Иконка лапы питомца">
+                            </picture>
+                            <h3 class="faq__title">Можно с животными?</h3>
+                        </div>
+                        <div class="faq__content" id="faq_2">
+                            <p>Да! Мы всегда рады пушистым гостям при условии,что ваш четвероногий друг воспитан, неагрессивен и всегда будет находиться под вашим контролем.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq__item" data-collapse="#faq_3">
+                        <div class="faq__header">
+                            <picture>
+                                <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+
+                                <source srcset="assets/img/faq/bug@1x.webp 1x, assets/img/faq/bug@2x.webp 2x" type="image/webp">
+                                <img class="faq__icon" src="assets/img/faq/bug@1x.png" srcset="assets/img/faq/bug@2x.png 2x" width="32" alt="Иконка жука">
+                            </picture>
+                            <h3 class="faq__title">Стоит ли опасаться клещей и змей?</h3>
+                        </div>
+                        <div class="faq__content" id="faq_3">
+                            <p>Места прибывания обработаны от змей и клещей. НО! Не стоит не стоит пренебрегать средствами личной защиты. Глэмпинг расположен в лесу и обработка не может дать 100% гарантии.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq__item" data-collapse="#faq_4">
+                        <div class="faq__header">
+                            <picture>
+                                <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+
+                                <source srcset="assets/img/faq/home@1x.webp 1x, assets/img/faq/home@2x.webp 2x" type="image/webp">
+                                <img class="faq__icon" src="assets/img/faq/home@1x.png" srcset="assets/img/faq/home@2x.png 2x" width="32" alt="Иконка дома">
+                            </picture>
+                            <h3 class="faq__title">В шатрах холодно?</h3>
+                        </div>
+                        <div class="faq__content" id="faq_4">
+                            <p>Все шатры выполнены по специальной технологии и подобранных материалов, что позволяет в жаркую погоду прекрасно вентилировать помещение, а в холодную сохранять тепло. На случаи более холодного времени в шатрах установлены дровяные печи.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq__item" data-collapse="#faq_5">
+                        <div class="faq__header">
+                            <picture>
+                                <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+
+                                <source srcset="assets/img/faq/food@1x.webp 1x, assets/img/faq/food@2x.webp 2x" type="image/webp">
+                                <img class="faq__icon" src="assets/img/faq/food@1x.png" srcset="assets/img/faq/food@2x.png 2x" width="32" alt="Иконка столовых приборов">
+                            </picture>
+                            <h3 class="faq__title">Как организовано питание?</h3>
+                        </div>
+                        <div class="faq__content" id="faq_5">
+                            <p>В стоимость аренды номера входит 3-х разовое питание, также на территории имеется уютный ресторан и бар. Если вы предпочитаете домашнюю кухню, то на территории лагеря есть мини-кухня, которой можно воспользоваться в любое удобное для вас время. В каждом шатре имеется холодильник.</p>
+                        </div>
+                    </div>
+                </div><!-- /.faq -->
+
+            </div><!-- /.container -->
+        </section>
+
+
+        <!-- Reviews -->
+        <section class="section--bottom-indent-less">
+            <div class="container">
+
+                <div class="section__header">
+                    <h2 class="section__title">Отзывы гостей</h2>
+                    <p class="section__description">Все еще не можете принять решение? Ознакомтесь с отзывами наших гостей</p>
+                </div>
+
+                <div class="reviews">
+                    <ul class="reviews__list">
+                        <li class="reviews__item reviews-item">
+                            <blockquote class="reviews-item__blockquote">
+                                <cite class="reviews-item__author">Алексей Кузнецов</cite>
+                                <p class="reviews-item__city">г. Москва</p>
+                                <p class="reviews-item__text">Были наслышаны от друзей и родных о глэмпинге и давно мечтали всей семьей побывать "В лесу у озера" и ураа, наконец-то мы это сделали. Зарядились позитивом и отдохнули от городской суеты. Дети оказались в восторге от большого количества развлечений. Каждый день мы открывали для себя что-то новое. Обязательно вернемся сюда за новыми впечатлениями. Это круто!</p>
+                            </blockquote>
+                        </li>
+
+                        <li class="reviews__item reviews-item">
+                            <blockquote class="reviews-item__blockquote">
+                                <cite class="reviews-item__author">Мария Филина</cite>
+                                <p class="reviews-item__city">г. Нижний Новгород</p>
+                                <p class="reviews-item__text">Отдых в глэмпинге оставил только самые приятные впечатления. Здесь каждый найдет то, что впечатлит именно его. Советую.</p>
+                            </blockquote>
+                        </li>
+
+                        <li class="reviews__item reviews-item">
+                            <blockquote class="reviews-item__blockquote">
+                                <cite class="reviews-item__author">Олег Семенов</cite>
+                                <p class="reviews-item__city">г. Санкт-Петербурга</p>
+                                <p class="reviews-item__text">Мы с женой обычно тратим уйму времени, чтобы подобрать место для отпуска, поскольку путешествуем мы с ребенком и двумя собаками и не везде есть возможность размещения нас в полном составе. Но однажды выбрав для отпуска глэмпинг "В лесу у озера" мы ни капли не пожалели и стали постоянными гостями этого места. Я никогда бы не подумал, что отдых на природе может быть настолько комфортным.</p>
+                            </blockquote>
+                        </li>
+                    </ul>
+                </div><!-- /.reviews -->
+
+            </div><!-- /.container -->
+        </section>
+
+
+        <!-- Contacts -->
+        <section class="section--bottom-indent-less" id="contacts" data-scrollspy="#contacts">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Контакты</h2>
+                </div>
+            </div>
+
+            <div class="contacts">
+                <div class="contacts__text-wrapper">
+                    <dl class="contacts__text">
+                        <div class="contacts__item">
+                            <dt class="contacts__name">Адрес:</dt>
+                            <dd class="contacts__value">
+                                <address>Республика Алтай, Телецкое&nbsp;озеро</address>
+                            </dd>
+                        </div>
+                        <div class="contacts__item">
+                            <dt class="contacts__name">Email:</dt>
+                            <dd class="contacts__value">
+                                <a href="tel:88001001010">8 800 100 10 10</a>
+                            </dd>
+                        </div>
+                        <div class="contacts__item">
+                            <dt class="contacts__name">Телефон:</dt>
+                            <dd class="contacts__value">
+                                <a href="mailto:info@intheforest.com">info@intheforest.com</a>
+                            </dd>
+                        </div>
+                        <div class="contacts__item">
+                            <dt class="contacts__name">Мы в социальных сетях:</dt>
+                            <dd class="contacts__value">
+                                <ul class="social">
+                                    <li class="social__item">
+                                        <a href="#" target="_blank">
+                                            <svg class="social__icon">
+                                                <use href="assets/img/sprite/sprite.svg#vk"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="#" target="_blank">
+                                            <svg class="social__icon">
+                                                <use href="assets/img/sprite/sprite.svg#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="#" target="_blank">
+                                            <svg class="social__icon">
+                                                <use href="assets/img/sprite/sprite.svg#telegram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </div>
+                    </dl>
+                </div><!-- /.contacts__text-wrapper -->
+
+                <div class="contacts__map-wrapper">
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс.Карты</a><a href="https://yandex.ru/maps/10231/altai-republic/geo/teletskoye_ozero/190018940/?ll=87.204122%2C51.666043&utm_medium=mapframe&utm_source=maps&z=10.32" style="color:#eee;font-size:12px;position:absolute;top:14px;">Телецкое озеро — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUyBWb9cD" style="position:relative;width:100%;height:550px;border:0"></iframe></div>
+                </div><!-- /.contacts__map-wrapper -->
+            </div><!-- /.contacts -->
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h2 class="visually-hidden">Права и политика конфиденциальности</h2>
+            <p class="footer__copyright">
+                <a href="#">© 2021</a>
+            </p>
+        </div><!-- /.container -->
+
+        <a class="scroll-up-link" href="#" data-scroll="#intro" title="Вверх">
+            <span class="visually-hidden">Вернуться в начало</span>
+        </a>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
+</body>
+</html>
