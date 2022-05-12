@@ -1,0 +1,39 @@
+/* Section
+================*/
+.section {
+    padding: 85px 0;
+
+    &--variation {
+        display: none;
+    }
+
+    &--accent {
+        background-color: rgba(#D9BCAC, 0.8);
+    }
+
+    &--bottom-indent-less {
+        padding-bottom: 0;
+    }
+
+    &__header {
+        width: 100%;
+        max-width: 950px;
+        margin: 0 auto 40px;
+
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 25px;
+
+        @include font-lobster(45px, 1.1);
+    }
+
+    &__description {
+        margin: 0;
+
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+

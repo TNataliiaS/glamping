@@ -1,0 +1,50 @@
+/* Prices
+================*/
+.prices {
+    padding: 0 15px;
+
+    &__wrapper {
+        margin: 10px auto 50px;
+        width: 100%;
+
+        box-shadow: 0 4px 5px 2px $element-color-accent;
+    }
+
+    &__table {
+        border-collapse: collapse;
+        border: 1px dotted $element-color-accent;
+    }
+
+    &__table-row,
+    &__table-data {
+        border: 1px dotted $element-color-accent;
+    }
+
+    &__table-heading {
+        font-size: 22px;
+        padding: 10px;
+    }
+
+    &__table-data {
+        padding: 10px;
+
+        font-size: 20px;
+        text-align: center;
+    }
+
+    &__table-data:not(.center):first-of-type {
+        text-align: left;
+    }
+
+    &__list {
+        margin: 0;
+        padding-left: 40px;
+
+        list-style-type: circle;
+    }
+
+    &__item {
+        margin: 0 0 10px;
+    }
+}
+

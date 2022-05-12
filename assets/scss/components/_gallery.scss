@@ -1,0 +1,30 @@
+/* Gallery
+================*/
+.gallery {
+    &__wrapper {
+        @extend %flex-wrap;
+    }
+
+    &__item {
+        width: 33.33333%;
+        min-height: 350px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__photo {
+        min-width: 100%;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+
+        transform: translate3d(-50%, -50%, 0);
+    }
+
+    &__link {
+        margin-top: 30px;
+        text-align: center;
+    }
+}

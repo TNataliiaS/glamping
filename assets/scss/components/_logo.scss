@@ -1,0 +1,10 @@
+/* Logo
+================*/
+.logo {
+    flex-shrink: 0;
+    margin-right: 10px;
+
+    &__img {
+        height: 65px;
+    }
+}

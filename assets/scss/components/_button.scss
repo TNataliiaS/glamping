@@ -1,0 +1,45 @@
+/* Btn
+================*/
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 1.5;
+    color: $white;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+
+    background-color: rgba($element-color-accent, .9);
+    border: 1px solid $black;
+    cursor: pointer;
+
+    transition: background 0.2s linear;
+
+    &:hover {
+        background-color:  darken($element-color-accent, 5%);
+    }
+
+    &--size-xl {
+        width: 33%;
+        min-height: 55px;
+
+        font-size: 20px;
+    }
+
+    &--size-xs {
+        line-height: 1.1;
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    &--block-light {
+        border: 1px solid #f5f2f2;
+        box-shadow: 0 4px 4px rgba($black, 0.25);
+    }
+}
+

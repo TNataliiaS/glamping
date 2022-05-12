@@ -1,0 +1,44 @@
+/* Booking-form
+================*/
+.booking-form {
+    @extend %flex-wrap;
+    justify-content: center;
+
+    &__input {
+        width: 33%;
+        min-height: 55px;
+        padding: 10px;
+
+        font-size: 20px;
+        color: rgba($black, 0.9);
+
+        border: 1px solid $black;
+
+        &:last-of-type {
+            margin: 0 2px;
+        }
+
+        &:focus {
+            outline: none;
+            border: 1px solid $black;
+        }
+
+        &--calendar {
+            background: rgba($white, 0.8) url('../img/calendar.png')  97% 50% no-repeat;
+        }
+
+        &[type="date"]::-webkit-inner-spin-button {
+            display: none;
+        }
+
+        &[type=date]::-webkit-calendar-picker-indicator {
+            opacity: 0;
+        }
+    }
+}
+
+
+
+
+
+

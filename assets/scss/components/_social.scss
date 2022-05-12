@@ -1,0 +1,27 @@
+/* Social
+================*/
+.social {
+    @extend %flex-align-center;
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 10px;
+            padding: 5px;
+        }
+    }
+
+    &__icon {
+        display: block;
+        width: 34px;
+        height: 34px;
+
+        fill: $element-color-accent;
+        opacity: 1;
+
+        transition: opacity .1s linear;
+
+        &:hover {
+            opacity: .6;
+        }
+    }
+}

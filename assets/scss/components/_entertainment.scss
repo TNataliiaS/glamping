@@ -1,0 +1,112 @@
+/* Entertainment
+================*/
+.entertainment {
+
+    &__wrapper:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        margin: 0 auto 40px;
+
+        @include font-lobster(45px, inherit);
+    }
+
+    &__list {
+        padding: 10px 30px;
+        height: 400px;
+        overflow: hidden;
+        counter-reset: entertainmentitem;
+
+        & .slick-list {
+            margin: 0 -30px;
+        }
+    }
+
+    &__item {
+        @extend %flex-wrap;
+        justify-content: space-between;
+
+        &:before {
+            counter-increment: entertainmentitem;
+            content: "0" counter(entertainmentitem);
+
+            margin-right: 5px;
+
+            @include font-lobster(42px, 1.5);
+            color: $element-color-accent;
+        }
+
+        &--revers {
+            flex-direction: row-reverse;
+
+            & .entertainment__subtitle {
+                text-align: end;
+            }
+        }
+    }
+
+    &__content {
+        width: 40%;
+        padding: 20px;
+
+        text-align: center;
+    }
+
+    &__subtitle {
+        font-size: 22px;
+        text-align: start;
+    }
+
+    &__text {
+        margin-top: 15px;
+
+        & > .btn {
+            margin: 15px 0;
+        }
+    }
+
+    &__photo {
+        width: 54%;
+        min-height: 380px;
+        overflow: hidden;
+
+        position: relative;
+
+        & > img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate3d(-50%, -50%, 0);
+        }
+
+        &--included:before {
+            content: '';
+            display: block;
+            width: 48px;
+            height: 48px;
+
+            background: url(../img/entertainment/label-check.png) no-repeat;
+
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            z-index: 2;
+        }
+
+        &--extra:before {
+            content: '';
+            display: block;
+            width: 48px;
+            height: 48px;
+
+            background: url(../img/entertainment/label-star.png) no-repeat;
+
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            z-index: 2;
+        }
+    }
+}

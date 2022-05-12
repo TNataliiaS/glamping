@@ -1,0 +1,44 @@
+/* Reviews
+================*/
+.reviews {
+    &__list {
+        @extend %flex-wrap;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+    }
+
+    &__item {
+        width: 30%;
+
+        background-color: $white;
+        box-shadow: 0px 4px 5px 2px $element-color-accent;
+    }
+
+    &__blockquote {
+        margin: 30px 20px;
+    }
+
+    &__author {
+        font-family: inherit;
+        font-size: 20px;
+        line-height: 1.1;
+        font-weight: 500;
+        font-style: normal;
+        text-align: center;
+    }
+
+    &__city {
+        margin-top: 7px;
+
+        color: rgba($black, 0.6)
+    }
+
+    &__text {
+        text-align: justify;
+    }
+}
+
+

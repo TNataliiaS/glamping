@@ -1,0 +1,26 @@
+/* Header
+================*/
+.header {
+    width: 100%;
+
+    background-color: rgba($element-color-accent, .8);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    transition: background .15s linear;
+
+        &--dark {
+            background-color: rgba($element-color-accent, .95);
+        }
+
+        &__nav {
+            @extend %flex-align-center;
+            justify-content: space-between;
+            min-height: 75px;
+        }
+
+}

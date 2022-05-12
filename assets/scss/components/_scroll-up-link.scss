@@ -1,0 +1,40 @@
+/* Scroll-up-link
+================*/
+.scroll-up-link {
+    width: 52px;
+    height: 52px;
+    visibility: hidden;
+    opacity: 0;
+
+    box-shadow: 0 2px 6px rgba(44, 44, 44, 0.2);
+    border-radius: 30px;
+    background-color: rgba($element-color-accent, .95);
+
+    transition: .2s;
+
+    position: fixed;
+    bottom: 120px;
+    right: 40px;
+    z-index: 1000;
+
+    &:before {
+        content: '';
+        width: 18px;
+        height: 18px;
+
+        background-image: url("../img/arrow-up.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        transform: translate(-50%, -50%);
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+    &--showed {
+        visibility: visible;
+        opacity: 1;
+    }
+}

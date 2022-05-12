@@ -1,0 +1,51 @@
+/* Slick */
+.slick-slide {
+    padding: 0 30px;
+}
+
+.slick-arrow {
+    display: block;
+    font-size: 0;
+    color: transparent;
+
+    border: 0;
+    background: none;
+    cursor: pointer;
+
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+
+    &:hover {
+        opacity: .6;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        width: 16px;
+        height: 16px;
+
+        border-top: 2px solid $black;
+        border-left: 2px solid $black;
+        opacity: 1;
+
+        transition: opacity .1s linear;
+    }
+}
+
+.slick-prev {
+    left: 0;
+    transform: rotate(-45deg);
+}
+
+.slick-next {
+    right: 0;
+    transform: rotate(135deg);
+}
+
+.slick-disabled {
+    opacity: .3;
+    cursor: default;
+}

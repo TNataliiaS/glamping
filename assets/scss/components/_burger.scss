@@ -1,0 +1,79 @@
+/* Burger
+================*/
+.burger {
+    display: none;
+    width: 30px;
+    height: 23px;
+    padding: 0;
+
+    background: none;
+    border: 0;
+    cursor: pointer;
+
+    position: relative;
+
+    font-size: 0;
+    color: transparent;
+
+    &:focus {
+        outline: none;
+    }
+
+    &__line {
+        display: block;
+        width: 30px;
+        height: 2px;
+        margin: 3px 0;
+
+        background-color: $white;
+
+        transition: transform .2s ease-out;
+
+        &:nth-child(1) {
+            width: 20px;
+            margin-left: auto;
+        }
+
+        &:nth-child(1),
+        &:nth-child(3) {
+            transform-origin: right;
+            transition: width .2s ease-out;
+        }
+    }
+
+    &--active {
+        & .burger__line {
+            &:nth-child(1),
+            &:nth-child(3) {
+                width: 0;
+            }
+
+            &:nth-child(2),
+            &:nth-child(4) {
+                position: absolute;
+                left: 0;
+                top: 50%;
+
+                transform-origin: center;
+            }
+
+            &:nth-child(2) {
+                transform: rotate(45deg);
+            }
+
+            &:nth-child(4) {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

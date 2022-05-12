@@ -1,0 +1,45 @@
+/* Intro
+================*/
+.intro {
+    @extend %flex-column;
+    justify-content: center;
+    min-height: 100vh;
+    height: 100vh;
+    padding-top: 75px;
+
+    background: #374929 url("../img/intro/intro-bg.jpg") no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+
+    position: relative;
+
+    &__wrapper {
+        @extend %flex-column;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 970px;
+        height: 62vh;
+        margin: 0 auto;
+    }
+
+    &__content {
+        margin-top: 25px;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+
+    &__suptitle {
+        font-size: 30px;
+        line-height: 1.1;
+
+        text-align: right;
+        margin-right: 15px;
+    }
+
+    &__title {
+        @include font-lobster(130px, 1.3);
+    }
+}
+
+
+

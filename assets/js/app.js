@@ -19,7 +19,6 @@ $(function() {
 
 
 
-
     let intro = $('#intro');
     let header = $('#header');
     let introH = intro.innerHeight();
@@ -89,12 +88,12 @@ $(function() {
             sectionOffset = sectionOffset - (windowH * 0.33333);
 
             if(scrollTop >= sectionOffset) {
-                $('#nav [data-scroll]').removeClass('nav__link--active');
-                $('#nav [data-scroll="' + sectionId + '"]').addClass('nav__link--active');
+                $('#nav [data-scroll]').removeClass('site-nav__link--active');
+                $('#nav [data-scroll="' + sectionId + '"]').addClass('site-nav__link--active');
             }
 
             if(scrollTop == 0) {
-                $('#nav [data-scroll]').removeClass('nav__link--active');
+                $('#nav [data-scroll]').removeClass('site-nav__link--active');
             }
         });
     }
@@ -112,7 +111,6 @@ $(function() {
         adaptiveHeight: true,
         touchThreshold: 8
     });
-
 
 
     // Collapse
@@ -135,7 +133,6 @@ $(function() {
         scroll.classList.toggle('scroll-up-link--showed', window.scrollY > 650)
     });
 });
-
 
 
 

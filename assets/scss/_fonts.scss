@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Lobster';
+    src: local('Lobster'),
+         url('../fonts/Lobster/LobsterRegular.woff2') format('woff2'),
+         url('../fonts/Lobster/LobsterRegular.woff') format('woff'),
+         url('../fonts/Lobster/LobsterRegular.ttf') format('ttf'),
+         url('../fonts/Lobster/LobsterRegular.eot') format('eot');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: local('Lora'),
+         url('../fonts/Lora/LoraRegular.woff2') format('woff2'),
+         url('../fonts/Lora/LoraRegular.woff') format('woff'),
+         url('../fonts/Lora/LoraRegular.ttf') format('ttf'),
+         url('../fonts/Lora/LoraRegular.eot') format('eot');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: local('Lora'),
+         url('../fonts/Lora/LoraMedium.woff2') format('woff2'),
+         url('../fonts/Lora/LoraMedium.woff') format('woff'),
+         url('../fonts/Lora/LoraMedium.ttf') format('ttf'),
+         url('../fonts/Lora/LoraMedium.eot') format('eot');
+    font-weight: 500;
+    font-style: normal;
+}

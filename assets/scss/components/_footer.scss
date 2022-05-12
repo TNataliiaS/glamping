@@ -1,0 +1,14 @@
+/* Footer
+================*/
+.footer {
+    padding: 20px 0;
+    background-color: rgba(116, 66, 36, 0.5);
+
+    &__copyright {
+        margin: 0;
+
+        font-size: 14px;
+        text-align: center;
+    }
+}
+

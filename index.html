@@ -4,17 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lora:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/vendor.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="assets/img/favicons/manifest.json">
-    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="./assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <title>Глэмпин "В лесу у озера"</title>
@@ -25,19 +22,31 @@
     <header class="header" id="header">
         <div class="container">
 
-            <div class="header__wrapper">
-                <a class="header__logo" href="#" data-scroll="#intro">
-                    <img class="header__img" src="assets/img/logo.svg" alt="Логотип гэмпинга с изображение палатки,леса, костра и озера">
+            <nav class="header__nav">
+                <a class="logo" href="#" data-scroll="#intro">
+                    <img class="logo__img img" src="./assets/img/logo.svg" alt="Логотип гэмпинга с изображение палатки,леса, костра и озера">
                 </a>
 
-                <nav class="nav" id="nav">
-                    <a class="nav__link" href="#" data-scroll="#about-glamping">О глэмпинге</a>
-                    <a class="nav__link" href="#" data-scroll="#territory">Номера и территория</a>
-                    <a class="nav__link" href="#" data-scroll="#prices">Цены</a>
-                    <a class="nav__link" href="#" data-scroll="#entertainment">Досуг</a>
-                    <a class="nav__link" href="#" data-scroll="#faq">Вопросы</a>
-                    <a class="nav__link" href="#" data-scroll="#contacts">Контакты</a>
-                </nav>
+                <ul class="site-nav" id="nav">
+                    <li class="site-nav__item">
+                        <a class="site-nav__link" href="#" data-scroll="#about-glamping">О глэмпинге</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link" href="#" data-scroll="#territory">Номера и территория</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link" href="#" data-scroll="#prices">Цены</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link" href="#" data-scroll="#entertainment">Досуг</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link" href="#" data-scroll="#faq">Вопросы</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link" href="#" data-scroll="#contacts">Контакты</a>
+                    </li>
+                </ul>
 
                 <button class="burger" type="button" id="navToggle">
                     <span class="burger__line">Меню</span>
@@ -45,7 +54,7 @@
                     <span class="burger__line">Меню</span>
                     <span class="burger__line">Меню</span>
                 </button>
-            </div><!-- /.header__wrapper -->
+            </nav><!-- /.header__nav -->
 
         </div><!-- /.container -->
     </header>
@@ -64,13 +73,13 @@
                         <h1 class="intro__title">&bdquo;В&nbsp;лесу у&nbsp;озера&ldquo;</h1>
                     </div>
 
-                    <div class="booking-form booking-form--variation">
-                        <form class="form" action="/" method="POST">
+                    <div class="booking">
+                        <form class="booking__form booking-form" action="/" method="POST">
                             <label class="visually-hidden" for="form-entry">Заезд</label>
-                            <input class="input input--calendar" id="form-entry" type="text" placeholder="Заезд" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" required/>
+                            <input class="booking-form__input booking-form__input--calendar" id="form-entry" type="text" placeholder="Заезд" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" required/>
 
                             <label class="visually-hidden" for="form-exit">Выезд</label>
-                            <input class="input input--calendar" id="form-exit" type="text" placeholder="Выезд" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" required/>
+                            <input class="booking-form__input booking-form__input--calendar" id="form-exit" type="text" placeholder="Выезд" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" required/>
 
                             <button class="btn btn--size-xl" type="button">Проверить наличие</button>
                         </form>
@@ -88,13 +97,13 @@
                     <h2 class="section__title">Бронирование</h2>
                 </div>
 
-                <div class="booking-form">
-                    <form class="form" action="/" method="POST">
+                <div class="booking">
+                    <form class="booking__form booking-form" action="/" method="POST">
                         <label class="visually-hidden" for="form-entry-variation">Заезд</label>
-                        <input class="input input--calendar" id="form-entry-variation" type="text" placeholder="Заезд" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+                        <input class="booking-form__input booking-form__input--calendar" id="form-entry-variation" type="text" placeholder="Заезд" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
 
                         <label class="visually-hidden" for="form-exit-variation">Выезд</label>
-                        <input class="input input--calendar" id="form-exit-variation" type="text" placeholder="Выезд" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+                        <input class="booking-form__input booking-form__input--calendar" id="form-exit-variation" type="text" placeholder="Выезд" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
 
                         <button class="btn btn--size-xl" type="button">Проверить наличие</button>
                     </form>
@@ -113,41 +122,37 @@
                 </div>
 
                 <div class="about-glamping">
-                    <div class="about-glamping__wrapper">
+                    <div class="about-glamping__col">
+                        <div class="about-glamping__wrapper">
+                            <picture>
+                                <source srcset="./assets/img/about/about-photo-1-small@1x.webp 1x, ./assets/img/about/about-photo-1-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                                <source srcset="./assets/img/about/about-photo-1-small@1x.jpg 1x, ./assets/img/about/about-photo-1-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
 
-                        <div class="about-glamping__col">
-                            <div class="about-glamping__img">
-                                <picture>
-                                    <source srcset="assets/img/about/about-photo-1-small@1x.webp 1x, assets/img/about/about-photo-1-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
-                                    <source srcset="assets/img/about/about-photo-1-small@1x.jpg 1x, assets/img/about/about-photo-1-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+                                <source srcset="./assets/img/about/about-photo-1@1x.webp 1x, ./assets/img/about/about-photo-1@2x.webp 2x" type="image/webp">
+                                <img class="img" src="./assets/img/about/about-photo-1@1x.jpg" srcset="./assets/img/about/about-photo-1@2x.jpg 2x" alt="Девушка на берегу озера">
+                            </picture>
+                        </div>
+                        <div class="about-glamping__content">
+                            <p>В нашем лагере каждый гость сможет выбрать подходящий досуг: прогулки по лесу, прокат велосипедов, настольные игры, водные развлечения и это только малая часть того, что мы можем вам предложить.</p>
+                            <a class="btn btn--size-xs btn--block-light" href="#" data-scroll="#entertainment">Подробнее</a>
+                        </div>
+                    </div><!-- /.about-glamping__col -->
 
-                                    <source srcset="assets/img/about/about-photo-1@1x.webp 1x, assets/img/about/about-photo-1@2x.webp 2x" type="image/webp">
-                                    <img class="img" src="assets/img/about/about-photo-1@1x.jpg" srcset="assets/img/about/about-photo-1@2x.jpg 2x" alt="Девушка на берегу озера">
-                                </picture>
-                            </div>
-                            <div class="about-glamping__content">
-                                <p>В нашем лагере каждый гость сможет выбрать подходящий досуг: прогулки по лесу, прокат велосипедов, настольные игры, водные развлечения и это только малая часть того, что мы можем вам предложить.</p>
-                                <a class="btn btn--size-xs btn--block-light" href="#" data-scroll="#entertainment">Подробнее</a>
-                            </div>
-                        </div><!-- /.about-glamping__col -->
+                    <div class="about-glamping__col about-glamping__col--reverse">
+                        <div class="about-glamping__wrapper">
+                            <picture>
+                                <source srcset="./assets/img/about/about-photo-2-small@1x.webp 1x, ./assets/img/about/about-photo-2-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                                <source srcset="./assets/img/about/about-photo-2-small@1x.jpg 1x, ./assets/img/about/about-photo-2-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
 
-                        <div class="about-glamping__col about-glamping__col--reverse">
-                            <div class="about-glamping__img">
-                                <picture>
-                                    <source srcset="assets/img/about/about-photo-2-small@1x.webp 1x, assets/img/about/about-photo-2-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
-                                    <source srcset="assets/img/about/about-photo-2-small@1x.jpg 1x, assets/img/about/about-photo-2-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
-
-                                    <source srcset="assets/img/about/about-photo-2@1x.webp" type="image/webp">
-                                    <img class="img" src="assets/img/about/about-photo-2@1x.jpg" srcset="assets/img/about/about-photo-2@2x.jpg 2x" alt="Компания молодых людей отдыхает в глэмпинге">
-                                </picture>
-                            </div>
-                            <div class="about-glamping__content">
-                                <p>Походная романтика без дискомфорта, невероятные закаты, костер под звездным небом, ароматные блюда &mdash; все это в &laquo;В&nbsp;лесу у&nbsp;озера&raquo;</p>
-                                <p>Приезжайте в гости с семьей или друзьями, насладитесь отдыхом и мы уверены, вы еще не раз к нам вернетесь!</p>
-                            </div>
-                        </div><!-- /.about-glamping__col -->
-
-                    </div><!-- /.about-glamping__wrapper -->
+                                <source srcset="./assets/img/about/about-photo-2@1x.webp" type="image/webp">
+                                <img class="img" src="./assets/img/about/about-photo-2@1x.jpg" srcset="./assets/img/about/about-photo-2@2x.jpg 2x" alt="Компания молодых людей отдыхает в глэмпинге">
+                            </picture>
+                        </div>
+                        <div class="about-glamping__content">
+                            <p>Походная романтика без дискомфорта, невероятные закаты, костер под звездным небом, ароматные блюда &mdash; все это в &laquo;В&nbsp;лесу у&nbsp;озера&raquo;</p>
+                            <p>Приезжайте в гости с семьей или друзьями, насладитесь отдыхом и мы уверены, вы еще не раз к нам вернетесь!</p>
+                        </div>
+                    </div><!-- /.about-glamping__col -->
                 </div><!-- /.about-glamping -->
 
             </div><!-- /.container -->
@@ -208,56 +213,56 @@
                     <div class="territory__gallery">
                         <div class="territory__item">
                             <picture>
-                                <source srcset="assets/img/territory-gallery/territory-gallery-photo-1-small@1x.webp 1x, assets/img/territory-gallery/territory-gallery-photo-1-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
-                                <source srcset="assets/img/territory-gallery/territory-gallery-photo-1-small@1x.jpg 1x, assets/img/territory-gallery/territory-gallery-photo-1-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+                                <source srcset="./assets/img/territory-gallery/territory-gallery-photo-1-small@1x.webp 1x, ./assets/img/territory-gallery/territory-gallery-photo-1-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                                <source srcset="./assets/img/territory-gallery/territory-gallery-photo-1-small@1x.jpg 1x, ./assets/img/territory-gallery/territory-gallery-photo-1-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
 
-                                <source srcset="assets/img/territory-gallery/territory-gallery-photo-1@1x.webp 1x, assets/img/territory-gallery/territory-gallery-photo-1@2x.webp 2x" type="image/webp">
-                                <img class="img" src="assets/img/territory-gallery/territory-gallery-photo-1@1x.jpg" srcset="assets/img/territory-gallery/territory-gallery-photo-1@2x.jpg 2x" alt="Обустройство одного из шатров">
+                                <source srcset="./assets/img/territory-gallery/territory-gallery-photo-1@1x.webp 1x, ./assets/img/territory-gallery/territory-gallery-photo-1@2x.webp 2x" type="image/webp">
+                                <img class="img" src="./assets/img/territory-gallery/territory-gallery-photo-1@1x.jpg" srcset="./assets/img/territory-gallery/territory-gallery-photo-1@2x.jpg 2x" alt="Обустройство одного из шатров">
                             </picture>
                         </div>
 
                         <div class="territory__item">
                             <picture>
-                                <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+                                <source srcset="./assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
 
-                                <source srcset="assets/img/territory-gallery/territory-gallery-photo-2@1x.webp 1x, assets/img/territory-gallery/territory-gallery-photo-2@2x.webp 2x" type="image/webp">
-                                <img class="img" src="assets/img/territory-gallery/territory-gallery-photo-2@1x.jpg" srcset="assets/img/territory-gallery/territory-gallery-photo-2@2x.jpg 2x" alt="Примеры блюд местного ресторана">
+                                <source srcset="./assets/img/territory-gallery/territory-gallery-photo-2@1x.webp 1x, ./assets/img/territory-gallery/territory-gallery-photo-2@2x.webp 2x" type="image/webp">
+                                <img class="img" src="./assets/img/territory-gallery/territory-gallery-photo-2@1x.jpg" srcset="./assets/img/territory-gallery/territory-gallery-photo-2@2x.jpg 2x" alt="Примеры блюд местного ресторана">
                             </picture>
                         </div>
 
                         <div class="territory__item">
                             <picture>
-                                <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+                                <source srcset="./assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
 
-                                <source srcset="assets/img/territory-gallery/territory-gallery-photo-3@1x.webp 1x, assets/img/territory-gallery/territory-gallery-photo-3@2x.webp 2x" type="image/webp">
-                                <img class="img" src="assets/img/territory-gallery/territory-gallery-photo-3@1x.jpg" srcset="assets/img/territory-gallery/territory-gallery-photo-3@2x.jpg 2x" alt="Обеденная зона с мини-кухней">
+                                <source srcset="./assets/img/territory-gallery/territory-gallery-photo-3@1x.webp 1x, ./assets/img/territory-gallery/territory-gallery-photo-3@2x.webp 2x" type="image/webp">
+                                <img class="img" src="./assets/img/territory-gallery/territory-gallery-photo-3@1x.jpg" srcset="./assets/img/territory-gallery/territory-gallery-photo-3@2x.jpg 2x" alt="Обеденная зона с мини-кухней">
                             </picture>
                         </div>
 
                         <div class="territory__item">
                             <picture>
-                                <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+                                <source srcset="./assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
 
-                                <source srcset="assets/img/territory-gallery/territory-gallery-photo-4@1x.webp 1x, assets/img/territory-gallery/territory-gallery-photo-4@2x.webp 2x" type="image/webp">
-                                <img class="img" src="assets/img/territory-gallery/territory-gallery-photo-4@1x.jpg" srcset="assets/img/territory-gallery/territory-gallery-photo-4@2x.jpg 2x" alt="Обустройство внутри санузла">
+                                <source srcset="./assets/img/territory-gallery/territory-gallery-photo-4@1x.webp 1x, ./assets/img/territory-gallery/territory-gallery-photo-4@2x.webp 2x" type="image/webp">
+                                <img class="img" src="./assets/img/territory-gallery/territory-gallery-photo-4@1x.jpg" srcset="./assets/img/territory-gallery/territory-gallery-photo-4@2x.jpg 2x" alt="Обустройство внутри санузла">
                             </picture>
                         </div>
 
                         <div class="territory__item">
                             <picture>
-                                <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+                                <source srcset="./assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
 
-                                <source srcset="assets/img/territory-gallery/territory-gallery-photo-5@1x.webp 1x, assets/img/territory-gallery/territory-gallery-photo-5@2x.webp 2x" type="image/webp">
-                                <img class="img" src="assets/img/territory-gallery/territory-gallery-photo-5@1x.jpg" srcset="assets/img/territory-gallery/territory-gallery-photo-5@2x.jpg 2x" alt="Четвероногий друг отдыхает в кресле">
+                                <source srcset="./assets/img/territory-gallery/territory-gallery-photo-5@1x.webp 1x, ./assets/img/territory-gallery/territory-gallery-photo-5@2x.webp 2x" type="image/webp">
+                                <img class="img" src="./assets/img/territory-gallery/territory-gallery-photo-5@1x.jpg" srcset="./assets/img/territory-gallery/territory-gallery-photo-5@2x.jpg 2x" alt="Четвероногий друг отдыхает в кресле">
                             </picture>
                         </div>
 
                         <div class="territory__item">
                             <picture>
-                                <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+                                <source srcset="./assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
 
-                                <source srcset="assets/img/territory-gallery/territory-gallery-photo-6@1x.webp 1x, assets/img/territory-gallery/territory-gallery-photo-6@2x.webp 2x" type="image/webp">
-                                <img class="img" src="assets/img/territory-gallery/territory-gallery-photo-6@1x.jpg" srcset="assets/img/territory-gallery/territory-gallery-photo-6@2x.jpg 2x" alt="Номер-шатер на территории глэмпинга">
+                                <source srcset="./assets/img/territory-gallery/territory-gallery-photo-6@1x.webp 1x, ./assets/img/territory-gallery/territory-gallery-photo-6@2x.webp 2x" type="image/webp">
+                                <img class="img" src="./assets/img/territory-gallery/territory-gallery-photo-6@1x.jpg" srcset="./assets/img/territory-gallery/territory-gallery-photo-6@2x.jpg 2x" alt="Номер-шатер на территории глэмпинга">
                             </picture>
                         </div>
                     </div><!-- /.territory__gallery -->
@@ -276,31 +281,31 @@
                 </div>
 
                 <div class="prices">
-                    <div class="prices__table">
-                        <table>
+                    <div class="prices__wrapper">
+                        <table class="prices__table">
                             <thead>
-                                <tr>
-                                    <th>Номер</th>
-                                    <th>Понедельник-пятница</th>
-                                    <th>Выходные дни</th>
-                                    <th>Праздничные дни</th>
+                                <tr class="prices__table-row">
+                                    <th class="prices__table-heading">Номер</th>
+                                    <th class="prices__table-heading">Понедельник-пятница</th>
+                                    <th class="prices__table-heading">Выходные дни</th>
+                                    <th class="prices__table-heading">Праздничные дни</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td rowspan="2">Двухместный шатер</td>
-                                    <td class="nowrap">7500 руб/сут.</td>
-                                    <td class="nowrap">8500 руб/сут.</td>
-                                    <td class="nowrap">10500 руб/сут.</td>
+                                <tr class="prices__table-row">
+                                    <td class="prices__table-data" rowspan="2">Двухместный шатер</td>
+                                    <td class="prices__table-data nowrap">7500 руб/сут.</td>
+                                    <td class="prices__table-data nowrap">8500 руб/сут.</td>
+                                    <td class="prices__table-data nowrap">10500 руб/сут.</td>
                                 </tr>
-                                <tr>
-                                    <td class="center nowrap">6500 руб/сут.&ast;</td>
-                                    <td>-</td>
-                                    <td class="nowrap">9500 руб/сут.&ast;</td>
+                                <tr class="prices__table-row">
+                                    <td class="prices__table-data center nowrap">6500 руб/сут.&ast;</td>
+                                    <td class="prices__table-data">-</td>
+                                    <td class="prices__table-data nowrap">9500 руб/сут.&ast;</td>
                                 </tr>
-                                <tr>
-                                    <td>В каждом номере допускается доп. расположение 1&nbsp;-&nbsp;2 гостей (спальное место диван - кровать)</td>
-                                    <td class="nowrap" colspan="3">&plus; 2000 руб/сут. за человека</td>
+                                <tr class="prices__table-row">
+                                    <td class="prices__table-data">В каждом номере допускается доп. расположение 1&nbsp;-&nbsp;2 гостей (спальное место диван - кровать)</td>
+                                    <td class="prices__table-data nowrap" colspan="3">&plus; 2000 руб/сут. за человека</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -354,10 +359,10 @@
                                     </div>
                                     <div class="entertainment__photo entertainment__photo--included">
                                         <picture>
-                                            <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+                                            <source srcset="./assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
 
-                                            <source srcset="assets/img/entertainment/entertainment-included-1@1x.webp 1x, assets/img/entertainment/entertainment-included-1@2x.webp 2x" type="image/webp">
-                                            <img src="assets/img/entertainment/entertainment-included-1@1x.jpg" srcset="assets/img/entertainment/entertainment-included-1@2x.jpg 2x" alt="Анастасия - преподаватель йоги в глэмпинге">
+                                            <source srcset="./assets/img/entertainment/entertainment-included-1@1x.webp 1x, ./assets/img/entertainment/entertainment-included-1@2x.webp 2x" type="image/webp">
+                                            <img src="./assets/img/entertainment/entertainment-included-1@1x.jpg" srcset="./assets/img/entertainment/entertainment-included-1@2x.jpg 2x" alt="Анастасия - преподаватель йоги в глэмпинге">
                                         </picture>
                                     </div>
                                 </div><!-- /.entertainment__item -->
@@ -375,10 +380,10 @@
                                     </div>
                                     <div class="entertainment__photo entertainment__photo--included">
                                         <picture>
-                                            <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+                                            <source srcset="./assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
 
-                                            <source srcset="assets/img/entertainment/entertainment-included-2@1x.webp 1x, assets/img/entertainment/entertainment-included-2@2x.webp 2x" type="image/webp">
-                                            <img src="assets/img/entertainment/entertainment-included-2@1x.jpg" srcset="assets/img/entertainment/entertainment-included-2@2x.jpg 2x" alt="Прогулка гостей глэмпинга на SUP-борде">
+                                            <source srcset="./assets/img/entertainment/entertainment-included-2@1x.webp 1x, ./assets/img/entertainment/entertainment-included-2@2x.webp 2x" type="image/webp">
+                                            <img src="./assets/img/entertainment/entertainment-included-2@1x.jpg" srcset="./assets/img/entertainment/entertainment-included-2@2x.jpg 2x" alt="Прогулка гостей глэмпинга на SUP-борде">
                                         </picture>
                                     </div>
                                 </div><!-- /.entertainment__item -->
@@ -394,10 +399,10 @@
                                     </div>
                                     <div class="entertainment__photo entertainment__photo--included">
                                         <picture>
-                                            <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+                                            <source srcset="./assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
 
-                                            <source srcset="assets/img/entertainment/entertainment-included-3@1x.webp 1x, assets/img/entertainment/entertainment-included-3@2x.webp 2x" type="image/webp">
-                                            <img src="assets/img/entertainment/entertainment-included-3@1x.jpg" srcset="assets/img/entertainment/entertainment-included-3@2x.jpg 2x" alt="Пешая прогулка наших гостей вместе с четвероногими друзьями">
+                                            <source srcset="./assets/img/entertainment/entertainment-included-3@1x.webp 1x, ./assets/img/entertainment/entertainment-included-3@2x.webp 2x" type="image/webp">
+                                            <img src="./assets/img/entertainment/entertainment-included-3@1x.jpg" srcset="./assets/img/entertainment/entertainment-included-3@2x.jpg 2x" alt="Пешая прогулка наших гостей вместе с четвероногими друзьями">
                                         </picture>
                                     </div>
                                 </div><!-- /.entertainment__item -->
@@ -414,10 +419,10 @@
                                     </div>
                                     <div class="entertainment__photo entertainment__photo--included">
                                         <picture>
-                                            <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+                                            <source srcset="./assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
 
-                                            <source srcset="assets/img/entertainment/entertainment-included-4@1x.webp 1x, assets/img/entertainment/entertainment-included-4@2x.webp 2x" type="image/webp">
-                                            <img src="assets/img/entertainment/entertainment-included-4@1x.jpg" srcset="assets/img/entertainment/entertainment-included-4@2x.jpg 2x" alt="Гости глэмпинга за увлекательной настольной игрой">
+                                            <source srcset="./assets/img/entertainment/entertainment-included-4@1x.webp 1x, ./assets/img/entertainment/entertainment-included-4@2x.webp 2x" type="image/webp">
+                                            <img src="./assets/img/entertainment/entertainment-included-4@1x.jpg" srcset="./assets/img/entertainment/entertainment-included-4@2x.jpg 2x" alt="Гости глэмпинга за увлекательной настольной игрой">
                                         </picture>
                                     </div>
                                 </div><!-- /.entertainment__item -->
@@ -440,10 +445,10 @@
                                     </div>
                                     <div class="entertainment__photo entertainment__photo--extra">
                                         <picture>
-                                            <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+                                            <source srcset="./assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
 
-                                            <source srcset="assets/img/entertainment/entertainment-extra-1@1x.webp 1x, assets/img/entertainment/entertainment-extra-1@2x.webp 2x" type="image/webp">
-                                            <img src="assets/img/entertainment/entertainment-extra-1@1x.jpg" srcset="assets/img/entertainment/entertainment-extra-1@2x.jpg 2x" alt="Сторож лагеря на прогулке на квадроциклах">
+                                            <source srcset="./assets/img/entertainment/entertainment-extra-1@1x.webp 1x, ./assets/img/entertainment/entertainment-extra-1@2x.webp 2x" type="image/webp">
+                                            <img src="./assets/img/entertainment/entertainment-extra-1@1x.jpg" srcset="./assets/img/entertainment/entertainment-extra-1@2x.jpg 2x" alt="Сторож лагеря на прогулке на квадроциклах">
                                         </picture>
                                     </div>
                                 </div><!-- /.entertainment__item -->
@@ -463,10 +468,10 @@
                                     </div>
                                     <div class="entertainment__photo entertainment__photo--extra">
                                         <picture>
-                                            <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+                                            <source srcset="./assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
 
-                                            <source srcset="assets/img/entertainment/entertainment-extra-2@1x.webp 1x, assets/img/entertainment/entertainment-extra-2@2x.webp 2x" type="image/webp">
-                                            <img src="assets/img/entertainment/entertainment-extra-2@1x.jpg" srcset="assets/img/entertainment/entertainment-extra-2@2x.jpg 2x" alt="Девушка наслаждается прекрасными видами окрестностей">
+                                            <source srcset="./assets/img/entertainment/entertainment-extra-2@1x.webp 1x, ./assets/img/entertainment/entertainment-extra-2@2x.webp 2x" type="image/webp">
+                                            <img src="./assets/img/entertainment/entertainment-extra-2@1x.jpg" srcset="./assets/img/entertainment/entertainment-extra-2@2x.jpg 2x" alt="Девушка наслаждается прекрасными видами окрестностей">
                                         </picture>
                                     </div>
                                 </div><!-- /.entertainment__item -->
@@ -484,10 +489,10 @@
                                     </div>
                                     <div class="entertainment__photo entertainment__photo--extra">
                                         <picture>
-                                            <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+                                            <source srcset="./assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
 
-                                            <source srcset="assets/img/entertainment/entertainment-extra-3@1x.webp 1x, assets/img/entertainment/entertainment-extra-3@2x.webp 2x" type="image/webp">
-                                            <img src="assets/img/entertainment/entertainment-extra-3@1x.jpg" srcset="assets/img/entertainment/entertainment-extra-3@2x.jpg 2x" alt="Инструктор по верховой езде ухаживет за любимицей лагеря - Альфой">
+                                            <source srcset="./assets/img/entertainment/entertainment-extra-3@1x.webp 1x, ./assets/img/entertainment/entertainment-extra-3@2x.webp 2x" type="image/webp">
+                                            <img src="./assets/img/entertainment/entertainment-extra-3@1x.jpg" srcset="./assets/img/entertainment/entertainment-extra-3@2x.jpg 2x" alt="Инструктор по верховой езде ухаживет за любимицей лагеря - Альфой">
                                         </picture>
                                     </div>
                                 </div><!-- /.entertainment__item -->
@@ -512,58 +517,58 @@
                 <div class="gallery__wrapper">
                     <div class="gallery__item">
                         <picture>
-                            <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+                            <source srcset="./assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
 
-                            <source srcset="assets/img/gallery/gallery-photo-1@1x.webp 1x, assets/img/gallery/gallery-photo-1@2x.webp 2x" type="image/webp">
-                            <img class="gallery__photo" src="assets/img/gallery/gallery-photo-1@1x.jpg" srcset="assets/img/gallery/gallery-photo-1@2x.jpg 2x" alt="Прогулка на квадроциклах">
+                            <source srcset="./assets/img/gallery/gallery-photo-1@1x.webp 1x, ./assets/img/gallery/gallery-photo-1@2x.webp 2x" type="image/webp">
+                            <img class="gallery__photo" src="./assets/img/gallery/gallery-photo-1@1x.jpg" srcset="./assets/img/gallery/gallery-photo-1@2x.jpg 2x" alt="Прогулка на квадроциклах">
                         </picture>
                     </div>
 
                     <div class="gallery__item">
                         <picture>
-                            <source srcset="assets/img/gallery/gallery-photo-2-small@1x.webp 1x, assets/img/gallery/gallery-photo-2-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
-                            <source srcset="assets/img/gallery/gallery-photo-2-small@1x.jpg 1x, assets/img/gallery/gallery-photo-2-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+                            <source srcset="./assets/img/gallery/gallery-photo-2-small@1x.webp 1x, ./assets/img/gallery/gallery-photo-2-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                            <source srcset="./assets/img/gallery/gallery-photo-2-small@1x.jpg 1x, ./assets/img/gallery/gallery-photo-2-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
 
-                            <source srcset="assets/img/gallery/gallery-photo-2@1x.webp 1x, assets/img/gallery/gallery-photo-2@2x.webp 2x" type="image/webp">
-                            <img class="gallery__photo" src="assets/img/gallery/gallery-photo-2@1x.jpg" srcset="assets/img/gallery/gallery-photo-2@2x.jpg 2x" alt="Девушка готовит еду на гриле в походе">
+                            <source srcset="./assets/img/gallery/gallery-photo-2@1x.webp 1x, ./assets/img/gallery/gallery-photo-2@2x.webp 2x" type="image/webp">
+                            <img class="gallery__photo" src="./assets/img/gallery/gallery-photo-2@1x.jpg" srcset="./assets/img/gallery/gallery-photo-2@2x.jpg 2x" alt="Девушка готовит еду на гриле в походе">
                         </picture>
                     </div>
 
                     <div class="gallery__item">
                         <picture>
-                            <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+                            <source srcset="./assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
 
-                            <source srcset="assets/img/gallery/gallery-photo-3@1x.webp 1x, assets/img/gallery/gallery-photo-3@2x.webp 2x" type="image/webp">
-                            <img class="gallery__photo" src="assets/img/gallery/gallery-photo-3@1x.jpg" srcset="assets/img/gallery/gallery-photo-3@2x.jpg 2x" alt="Молодая пара наслаждается отдыхом в общей зоне на территории глэмпинга">
+                            <source srcset="./assets/img/gallery/gallery-photo-3@1x.webp 1x, ./assets/img/gallery/gallery-photo-3@2x.webp 2x" type="image/webp">
+                            <img class="gallery__photo" src="./assets/img/gallery/gallery-photo-3@1x.jpg" srcset="./assets/img/gallery/gallery-photo-3@2x.jpg 2x" alt="Молодая пара наслаждается отдыхом в общей зоне на территории глэмпинга">
                         </picture>
                     </div>
 
                     <div class="gallery__item">
                         <picture>
-                            <source srcset="assets/img/gallery/gallery-photo-4-small@1x.webp 1x, assets/img/gallery/gallery-photo-4-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
-                            <source srcset="assets/img/gallery/gallery-photo-4-small@1x.jpg 1x, assets/img/gallery/gallery-photo-4-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+                            <source srcset="./assets/img/gallery/gallery-photo-4-small@1x.webp 1x, ./assets/img/gallery/gallery-photo-4-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                            <source srcset="./assets/img/gallery/gallery-photo-4-small@1x.jpg 1x, ./assets/img/gallery/gallery-photo-4-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
 
-                            <source srcset="assets/img/gallery/gallery-photo-4@1x.webp 1x, assets/img/gallery/gallery-photo-4@2x.webp 2x" type="image/webp">
-                            <img class="gallery__photo" src="assets/img/gallery/gallery-photo-4@1x.jpg" srcset="assets/img/gallery/gallery-photo-4@2x.jpg 2x" alt="Ароматный шашлык на мангале">
+                            <source srcset="./assets/img/gallery/gallery-photo-4@1x.webp 1x, ./assets/img/gallery/gallery-photo-4@2x.webp 2x" type="image/webp">
+                            <img class="gallery__photo" src="./assets/img/gallery/gallery-photo-4@1x.jpg" srcset="./assets/img/gallery/gallery-photo-4@2x.jpg 2x" alt="Ароматный шашлык на мангале">
                         </picture>
                     </div>
 
                     <div class="gallery__item">
                         <picture>
-                            <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+                            <source srcset="./assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
 
-                            <source srcset="assets/img/gallery/gallery-photo-5@1x.webp 1x, assets/img/gallery/gallery-photo-5@2x.webp 2x" type="image/webp">
-                            <img class="gallery__photo" src="assets/img/gallery/gallery-photo-5@1x.jpg" srcset="assets/img/gallery/gallery-photo-5@2x.jpg 2x" alt="Глинтвейн, приготовленный на костре">
+                            <source srcset="./assets/img/gallery/gallery-photo-5@1x.webp 1x, ./assets/img/gallery/gallery-photo-5@2x.webp 2x" type="image/webp">
+                            <img class="gallery__photo" src="./assets/img/gallery/gallery-photo-5@1x.jpg" srcset="./assets/img/gallery/gallery-photo-5@2x.jpg 2x" alt="Глинтвейн, приготовленный на костре">
                         </picture>
                     </div>
 
                     <div class="gallery__item">
                         <picture>
-                            <source srcset="assets/img/gallery/gallery-photo-6-small@1x.webp 1x, assets/img/gallery/gallery-photo-6-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
-                            <source srcset="assets/img/gallery/gallery-photo-6-small@1x.jpg 1x, assets/img/gallery/gallery-photo-6-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
+                            <source srcset="./assets/img/gallery/gallery-photo-6-small@1x.webp 1x, ./assets/img/gallery/gallery-photo-6-small@2x.webp 2x" media="(max-width: 414px)" type="image/webp">
+                            <source srcset="./assets/img/gallery/gallery-photo-6-small@1x.jpg 1x, ./assets/img/gallery/gallery-photo-6-small@2x.jpg 2x" media="(max-width: 414px)" type="image/jpg">
 
-                            <source srcset="assets/img/gallery/gallery-photo-6@1x.webp 1x, assets/img/gallery/gallery-photo-6@2x.webp 2x" type="image/webp">
-                            <img class="gallery__photo" src="assets/img/gallery/gallery-photo-6@1x.jpg" srcset="assets/img/gallery/gallery-photo-6@2x.jpg 2x" alt="Уютные вечера в глэмпинге">
+                            <source srcset="./assets/img/gallery/gallery-photo-6@1x.webp 1x, ./assets/img/gallery/gallery-photo-6@2x.webp 2x" type="image/webp">
+                            <img class="gallery__photo" src="./assets/img/gallery/gallery-photo-6@1x.jpg" srcset="./assets/img/gallery/gallery-photo-6@2x.jpg 2x" alt="Уютные вечера в глэмпинге">
                         </picture>
                     </div>
                 </div><!-- /.gallery__wrapper -->
@@ -585,14 +590,14 @@
                     <p class="section__description">Здесь вы можете найти ответы на часто задаваемые вопросы</p>
                 </div>
 
-                <div class="faq reversal">
+                <div class="faq">
                     <div class="faq__item" data-collapse="#faq_1">
                         <div class="faq__header">
                             <picture>
-                                <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+                                <source srcset="./assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
 
-                                <source srcset="assets/img/faq/car@1x.webp 1x, assets/img/faq/car@2x.webp 2x" type="image/webp">
-                                <img class="faq__icon" src="assets/img/faq/car@1x.png" srcset="assets/img/faq/car@2x.png 2x" width="32" alt="Иконка автомобиля">
+                                <source srcset="./assets/img/faq/car@1x.webp 1x, ./assets/img/faq/car@2x.webp 2x" type="image/webp">
+                                <img class="faq__icon" src="./assets/img/faq/car@1x.png" srcset="./assets/img/faq/car@2x.png 2x" width="32" alt="Иконка автомобиля">
                             </picture>
                             <h3 class="faq__title">Есть ли в глэмпинге стоянка для автомобилей?</h3>
                         </div>
@@ -604,10 +609,10 @@
                     <div class="faq__item" data-collapse="#faq_2">
                         <div class="faq__header">
                             <picture>
-                                <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+                                <source srcset="./assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
 
-                                <source srcset="assets/img/faq/dog@1x.webp 1x, assets/img/faq/dog@2x.webp 2x" type="image/webp">
-                                <img class="faq__icon" src="assets/img/faq/dog@1x.png" srcset="assets/img/faq/dog@2x.png 2x" width="32" alt="Иконка лапы питомца">
+                                <source srcset="./assets/img/faq/dog@1x.webp 1x, ./assets/img/faq/dog@2x.webp 2x" type="image/webp">
+                                <img class="faq__icon" src="./assets/img/faq/dog@1x.png" srcset="./assets/img/faq/dog@2x.png 2x" width="32" alt="Иконка лапы питомца">
                             </picture>
                             <h3 class="faq__title">Можно с животными?</h3>
                         </div>
@@ -619,10 +624,10 @@
                     <div class="faq__item" data-collapse="#faq_3">
                         <div class="faq__header">
                             <picture>
-                                <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+                                <source srcset="./assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
 
-                                <source srcset="assets/img/faq/bug@1x.webp 1x, assets/img/faq/bug@2x.webp 2x" type="image/webp">
-                                <img class="faq__icon" src="assets/img/faq/bug@1x.png" srcset="assets/img/faq/bug@2x.png 2x" width="32" alt="Иконка жука">
+                                <source srcset="./assets/img/faq/bug@1x.webp 1x, ./assets/img/faq/bug@2x.webp 2x" type="image/webp">
+                                <img class="faq__icon" src="./assets/img/faq/bug@1x.png" srcset="./assets/img/faq/bug@2x.png 2x" width="32" alt="Иконка жука">
                             </picture>
                             <h3 class="faq__title">Стоит ли опасаться клещей и змей?</h3>
                         </div>
@@ -634,10 +639,10 @@
                     <div class="faq__item" data-collapse="#faq_4">
                         <div class="faq__header">
                             <picture>
-                                <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+                                <source srcset="./assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
 
-                                <source srcset="assets/img/faq/home@1x.webp 1x, assets/img/faq/home@2x.webp 2x" type="image/webp">
-                                <img class="faq__icon" src="assets/img/faq/home@1x.png" srcset="assets/img/faq/home@2x.png 2x" width="32" alt="Иконка дома">
+                                <source srcset="./assets/img/faq/home@1x.webp 1x, ./assets/img/faq/home@2x.webp 2x" type="image/webp">
+                                <img class="faq__icon" src="./assets/img/faq/home@1x.png" srcset="./assets/img/faq/home@2x.png 2x" width="32" alt="Иконка дома">
                             </picture>
                             <h3 class="faq__title">В шатрах холодно?</h3>
                         </div>
@@ -649,10 +654,10 @@
                     <div class="faq__item" data-collapse="#faq_5">
                         <div class="faq__header">
                             <picture>
-                                <source srcset="assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
+                                <source srcset="./assets/img/pixel-1x1.jpg" media="(max-width: 414px)" type="image/jpg">
 
-                                <source srcset="assets/img/faq/food@1x.webp 1x, assets/img/faq/food@2x.webp 2x" type="image/webp">
-                                <img class="faq__icon" src="assets/img/faq/food@1x.png" srcset="assets/img/faq/food@2x.png 2x" width="32" alt="Иконка столовых приборов">
+                                <source srcset="./assets/img/faq/food@1x.webp 1x, ./assets/img/faq/food@2x.webp 2x" type="image/webp">
+                                <img class="faq__icon" src="./assets/img/faq/food@1x.png" srcset="./assets/img/faq/food@2x.png 2x" width="32" alt="Иконка столовых приборов">
                             </picture>
                             <h3 class="faq__title">Как организовано питание?</h3>
                         </div>
@@ -667,7 +672,7 @@
 
 
         <!-- Reviews -->
-        <section class="section--bottom-indent-less">
+        <section class="section section--bottom-indent-less">
             <div class="container">
 
                 <div class="section__header">
@@ -677,27 +682,27 @@
 
                 <div class="reviews">
                     <ul class="reviews__list">
-                        <li class="reviews__item reviews-item">
-                            <blockquote class="reviews-item__blockquote">
-                                <cite class="reviews-item__author">Алексей Кузнецов</cite>
-                                <p class="reviews-item__city">г. Москва</p>
-                                <p class="reviews-item__text">Были наслышаны от друзей и родных о глэмпинге и давно мечтали всей семьей побывать "В лесу у озера" и ураа, наконец-то мы это сделали. Зарядились позитивом и отдохнули от городской суеты. Дети оказались в восторге от большого количества развлечений. Каждый день мы открывали для себя что-то новое. Обязательно вернемся сюда за новыми впечатлениями. Это круто!</p>
+                        <li class="reviews__item">
+                            <blockquote class="reviews__blockquote">
+                                <cite class="reviews__author">Алексей Кузнецов</cite>
+                                <p class="reviews__city">г. Москва</p>
+                                <p class="reviews__text">Были наслышаны от друзей и родных о глэмпинге и давно мечтали всей семьей побывать "В лесу у озера" и ураа, наконец-то мы это сделали. Зарядились позитивом и отдохнули от городской суеты. Дети оказались в восторге от большого количества развлечений. Каждый день мы открывали для себя что-то новое. Обязательно вернемся сюда за новыми впечатлениями. Это круто!</p>
                             </blockquote>
                         </li>
 
-                        <li class="reviews__item reviews-item">
-                            <blockquote class="reviews-item__blockquote">
-                                <cite class="reviews-item__author">Мария Филина</cite>
-                                <p class="reviews-item__city">г. Нижний Новгород</p>
-                                <p class="reviews-item__text">Отдых в глэмпинге оставил только самые приятные впечатления. Здесь каждый найдет то, что впечатлит именно его. Советую.</p>
+                        <li class="reviews__item">
+                            <blockquote class="reviews__blockquote">
+                                <cite class="reviews__author">Мария Филина</cite>
+                                <p class="reviews__city">г. Нижний Новгород</p>
+                                <p class="reviews__text">Отдых в глэмпинге оставил только самые приятные впечатления. Здесь каждый найдет то, что впечатлит именно его. Советую.</p>
                             </blockquote>
                         </li>
 
-                        <li class="reviews__item reviews-item">
-                            <blockquote class="reviews-item__blockquote">
-                                <cite class="reviews-item__author">Олег Семенов</cite>
-                                <p class="reviews-item__city">г. Санкт-Петербурга</p>
-                                <p class="reviews-item__text">Мы с женой обычно тратим уйму времени, чтобы подобрать место для отпуска, поскольку путешествуем мы с ребенком и двумя собаками и не везде есть возможность размещения нас в полном составе. Но однажды выбрав для отпуска глэмпинг "В лесу у озера" мы ни капли не пожалели и стали постоянными гостями этого места. Я никогда бы не подумал, что отдых на природе может быть настолько комфортным.</p>
+                        <li class="reviews__item">
+                            <blockquote class="reviews__blockquote">
+                                <cite class="reviews__author">Олег Семенов</cite>
+                                <p class="reviews__city">г. Санкт-Петербурга</p>
+                                <p class="reviews__text">Мы с женой обычно тратим уйму времени, чтобы подобрать место для отпуска, поскольку путешествуем мы с ребенком и двумя собаками и не везде есть возможность размещения нас в полном составе. Но однажды выбрав для отпуска глэмпинг "В лесу у озера" мы ни капли не пожалели и стали постоянными гостями этого места. Я никогда бы не подумал, что отдых на природе может быть настолько комфортным.</p>
                             </blockquote>
                         </li>
                     </ul>
@@ -708,7 +713,7 @@
 
 
         <!-- Contacts -->
-        <section class="section--bottom-indent-less" id="contacts" data-scrollspy="#contacts">
+        <section class="section section--bottom-indent-less" id="contacts" data-scrollspy="#contacts">
             <div class="container">
                 <div class="section__header">
                     <h2 class="section__title">Контакты</h2>
@@ -721,19 +726,19 @@
                         <div class="contacts__item">
                             <dt class="contacts__name">Адрес:</dt>
                             <dd class="contacts__value">
-                                <address>Республика Алтай, Телецкое&nbsp;озеро</address>
+                                <address class="contacts__address">Республика Алтай, Телецкое&nbsp;озеро</address>
                             </dd>
                         </div>
                         <div class="contacts__item">
                             <dt class="contacts__name">Email:</dt>
                             <dd class="contacts__value">
-                                <a href="tel:88001001010">8 800 100 10 10</a>
+                                <a class="contacts__link" href="tel:88001001010">8 800 100 10 10</a>
                             </dd>
                         </div>
                         <div class="contacts__item">
                             <dt class="contacts__name">Телефон:</dt>
                             <dd class="contacts__value">
-                                <a href="mailto:info@intheforest.com">info@intheforest.com</a>
+                                <a class="contacts__link" href="mailto:info@intheforest.com">info@intheforest.com</a>
                             </dd>
                         </div>
                         <div class="contacts__item">
@@ -743,21 +748,21 @@
                                     <li class="social__item">
                                         <a href="#" target="_blank">
                                             <svg class="social__icon">
-                                                <use href="assets/img/sprite/sprite.svg#vk"></use>
+                                                <use href="./assets/img/sprite/sprite.svg#vk"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="social__item">
                                         <a href="#" target="_blank">
                                             <svg class="social__icon">
-                                                <use href="assets/img/sprite/sprite.svg#instagram"></use>
+                                                <use href="./assets/img/sprite/sprite.svg#instagram"></use>
                                             </svg>
                                         </a>
                                     </li>
                                     <li class="social__item">
                                         <a href="#" target="_blank">
                                             <svg class="social__icon">
-                                                <use href="assets/img/sprite/sprite.svg#telegram"></use>
+                                                <use href="./assets/img/sprite/sprite.svg#telegram"></use>
                                             </svg>
                                         </a>
                                     </li>
@@ -792,9 +797,9 @@
 
 
     <!-- JavaScript -->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/app.js"></script>
 
 </body>
 </html>
