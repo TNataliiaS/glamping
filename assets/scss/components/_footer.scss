@@ -9,6 +9,22 @@
 
         font-size: 14px;
         text-align: center;
+
+        @include breakpoint($breakpoint-sm) {
+            font-size: 12px;
+        }
+    }
+
+    @include breakpoint($breakpoint-lg) {
+        padding: 17px 0;
+    }
+
+    @include breakpoint($breakpoint-md) {
+            padding: 15px 0;
+    }
+
+    @include breakpoint($breakpoint-sm) {
+        padding: 12px 0;
     }
 }
 

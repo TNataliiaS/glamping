@@ -10,6 +10,10 @@
 
         &:first-child {
             margin-top: 0;
+
+            @include breakpoint($breakpoint-md) {
+                margin-top: 15px;
+            }
         }
 
         &:last-child {
@@ -19,11 +23,21 @@
         &--reverse {
             flex-direction: row-reverse;
         }
+
+        @include breakpoint($breakpoint-md) {
+            flex-direction: column;
+        }
     }
 
     &__wrapper {
         width: 50%;
         overflow: hidden;
+
+        @include breakpoint($breakpoint-md) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
 
         & > .img {
             width: 100%;
@@ -53,5 +67,14 @@
 
             background-color: $element-color-accent;
         }
+
+        @include breakpoint($breakpoint-md) {
+            width: 100%;
+            padding-bottom: 0;
+        }
+    }
+
+    @include breakpoint($breakpoint-sm) {
+        padding: 0;
     }
 }

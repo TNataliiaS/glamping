@@ -6,3 +6,17 @@
     font-size: $size;
     line-height: $height;
 }
+
+
+@mixin breakpoint($br) {
+    @media (max-width: $br) {
+        @content;
+    }
+}
+
+
+@mixin bp-max($br-w, $br-h) {
+    @media (max-width: $br-w) and (max-height: $br-h) {
+        @content;
+    }
+}

@@ -7,22 +7,40 @@
         margin: 10px auto 50px;
         width: 100%;
 
+        border: 1px dotted $element-color-accent;
         box-shadow: 0 4px 5px 2px $element-color-accent;
+
+        @include breakpoint($breakpoint-lg) {
+            margin-bottom: 35px;
+        }
+
+        @include breakpoint($breakpoint-md-additional) {
+            max-width: 500px;
+            overflow-x: scroll;
+        }
     }
 
     &__table {
         border-collapse: collapse;
-        border: 1px dotted $element-color-accent;
     }
 
-    &__table-row,
-    &__table-data {
+    &__table-data,
+    &__table-heading {
         border: 1px dotted $element-color-accent;
     }
 
     &__table-heading {
         font-size: 22px;
         padding: 10px;
+
+        @include breakpoint($breakpoint-lg) {
+            font-size: 20px;
+            padding: 5px;
+        }
+
+        @include breakpoint($breakpoint-md) {
+            font-size: 18px;
+        }
     }
 
     &__table-data {
@@ -30,10 +48,19 @@
 
         font-size: 20px;
         text-align: center;
-    }
 
-    &__table-data:not(.center):first-of-type {
-        text-align: left;
+        @include breakpoint($breakpoint-lg) {
+            font-size: 18px;
+            padding: 5px;
+        }
+
+        @include breakpoint($breakpoint-md) {
+            font-size: 16px;
+        }
+
+        &:not(.center):first-of-type {
+            text-align: left;
+        }
     }
 
     &__list {
@@ -45,6 +72,10 @@
 
     &__item {
         margin: 0 0 10px;
+
+        @include breakpoint($breakpoint-lg)  {
+            margin-bottom: 7px;
+        }
     }
 }
 

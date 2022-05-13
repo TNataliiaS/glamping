@@ -4,18 +4,29 @@
     @extend %flex-wrap;
     justify-content: center;
 
+    &--variation {
+        @media (max-height: 320px) and (orientation: landscape) {
+            display: none;
+        }
+    }
+
     &__input {
         width: 33%;
         min-height: 55px;
         padding: 10px;
 
         font-size: 20px;
+        line-height: inherit;
         color: rgba($black, 0.9);
 
         border: 1px solid $black;
 
         &:last-of-type {
             margin: 0 2px;
+
+            @include breakpoint($breakpoint-md-additional) {
+                margin: 2px 0;
+            }
         }
 
         &:focus {
@@ -31,8 +42,22 @@
             display: none;
         }
 
-        &[type=date]::-webkit-calendar-picker-indicator {
+        &[type="date"]::-webkit-calendar-picker-indicator {
             opacity: 0;
+        }
+
+        @include breakpoint($breakpoint-xl) {
+            width: 25%;
+            min-height: 52px;
+            min-width: 170px;
+
+            font-size: 18px;
+        }
+
+        @include breakpoint($breakpoint-md-additional) {
+            width: 100%;
+            max-width: 300px;
+            font-size: 16px;
         }
     }
 }

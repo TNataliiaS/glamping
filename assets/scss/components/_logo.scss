@@ -6,5 +6,14 @@
 
     &__img {
         height: 65px;
+
+        @include breakpoint($breakpoint-lg) {
+            height: 48px;
+            padding-right: 10px;
+        }
+
+        @include breakpoint($breakpoint-sm) {
+            height: 46px;
+        }
     }
 }

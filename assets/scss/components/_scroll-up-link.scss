@@ -37,4 +37,8 @@
         visibility: visible;
         opacity: 1;
     }
+
+    @include breakpoint($breakpoint-lg) {
+        display: none;
+    }
 }

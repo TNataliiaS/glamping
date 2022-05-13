@@ -10,6 +10,22 @@
         min-height: 350px;
         position: relative;
         overflow: hidden;
+
+        @include breakpoint($breakpoint-xl) {
+            width: 50%;
+        }
+
+        @include breakpoint($breakpoint-md) {
+            width: 100%;
+
+            &:nth-child(odd) {
+                display: none;
+            }
+        }
+
+        @include breakpoint($breakpoint-sm) {
+            min-height: 250px;
+        }
     }
 
     &__photo {

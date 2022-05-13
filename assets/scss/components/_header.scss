@@ -21,6 +21,14 @@
             @extend %flex-align-center;
             justify-content: space-between;
             min-height: 75px;
+
+            @include breakpoint($breakpoint-lg) {
+                min-height: 55px;
+            }
+
+            @include breakpoint($breakpoint-sm) {
+                min-height: 52px;
+            }
         }
 
 }

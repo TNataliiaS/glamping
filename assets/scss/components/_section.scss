@@ -3,8 +3,20 @@
 .section {
     padding: 85px 0;
 
+    @include breakpoint($breakpoint-lg) {
+        padding: 60px 0;
+    }
+
+    @include breakpoint($breakpoint-sm) {
+        padding: 55px 0;
+    }
+
     &--variation {
         display: none;
+
+        @media (max-height: 320px) and (orientation: landscape) {
+                display: block;
+        }
     }
 
     &--accent {
@@ -13,6 +25,14 @@
 
     &--bottom-indent-less {
         padding-bottom: 0;
+
+        @include breakpoint($breakpoint-lg) {
+            padding-top: 60px;
+        }
+
+        @include breakpoint($breakpoint-sm) {
+            padding-top: 55px;
+        }
     }
 
     &__header {
@@ -21,12 +41,29 @@
         margin: 0 auto 40px;
 
         text-align: center;
+
+        @include breakpoint($breakpoint-md) {
+            margin-bottom: 15px;
+        }
     }
 
     &__title {
         margin-bottom: 25px;
 
         @include font-lobster(45px, 1.1);
+
+        @include breakpoint($breakpoint-lg) {
+            font-size: 36px;
+        }
+
+        @include breakpoint($breakpoint-md) {
+            margin-bottom: 15px;
+            font-size: 32px;
+        }
+
+        @include breakpoint($breakpoint-sm) {
+            font-size: 30px;
+        }
     }
 
     &__description {
@@ -34,6 +71,14 @@
 
         font-size: 20px;
         font-weight: 500;
+
+        @include breakpoint($breakpoint-lg) {
+            font-size: 18px;
+        }
+
+        @include breakpoint($breakpoint-sm) {
+            font-size: 16px;
+        }
     }
 }
 
