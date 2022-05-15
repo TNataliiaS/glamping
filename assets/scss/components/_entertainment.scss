@@ -47,7 +47,7 @@
         overflow: hidden;
         counter-reset: entertainmentitem;
 
-        & .slick-list {
+        .slick-list {
             margin: 0 -30px;
         }
 
@@ -81,7 +81,7 @@
         &--revers {
             flex-direction: row-reverse;
 
-            & .entertainment__subtitle {
+            .entertainment__subtitle {
                 text-align: end;
 
                 @include breakpoint($breakpoint-lg) {
@@ -134,7 +134,7 @@
     &__text {
         margin-top: 15px;
 
-        & > .btn {
+        .btn {
             margin: 15px 0;
         }
     }
@@ -146,7 +146,7 @@
 
         position: relative;
 
-        & img {
+        img {
             position: absolute;
             top: 50%;
             left: 50%;

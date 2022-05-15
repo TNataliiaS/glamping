@@ -42,7 +42,7 @@
     }
 
     &--active {
-        & .burger__line {
+        .burger__line {
             &:nth-child(1),
             &:nth-child(3) {
                 width: 0;

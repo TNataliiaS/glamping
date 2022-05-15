@@ -455,6 +455,8 @@ input, textarea, select, button {
   }
 }
 
+/* Booking
+================*/
 .booking {
   width: 100%;
   max-width: 900px;
@@ -706,18 +708,15 @@ input, textarea, select, button {
     justify-content: center;
   }
 }
-.about-glamping__wrapper > .img {
-  width: 100%;
-}
 .about-glamping__content {
   width: 50%;
   padding: 15px;
   text-align: center;
 }
-.about-glamping__content > p:last-child {
+.about-glamping__content p:last-child {
   margin-bottom: 0;
 }
-.about-glamping__content > .btn {
+.about-glamping__content .btn {
   margin: 7px 0;
 }
 .about-glamping__content:before {
@@ -1112,7 +1111,7 @@ input, textarea, select, button {
 .entertainment__text {
   margin-top: 15px;
 }
-.entertainment__text > .btn {
+.entertainment__text .btn {
   margin: 15px 0;
 }
 .entertainment__photo {
