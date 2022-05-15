@@ -25,14 +25,14 @@
         transition: background .3s ease, color .3s ease;
 
         @include breakpoint($breakpoint-xl) {
-            height: auto;
             padding: 0 10px;
-
             font-size: 18px;
         }
 
         @include breakpoint($breakpoint-lg) {
+            height: auto;
             padding: 10px 20px;
+
             justify-content: flex-end;
 
             &:hover:before {

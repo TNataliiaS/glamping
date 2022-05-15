@@ -200,13 +200,13 @@ input, textarea, select, button {
 }
 @media (max-width: 1199px) {
   .site-nav__link {
-    height: auto;
     padding: 0 10px;
     font-size: 18px;
   }
 }
 @media (max-width: 991px) {
   .site-nav__link {
+    height: auto;
     padding: 10px 20px;
     justify-content: flex-end;
   }
