@@ -133,10 +133,3 @@ $(function() {
         scroll.classList.toggle('scroll-up-link--showed', window.scrollY > 650)
     });
 });
-
-
-
-
-
-
-

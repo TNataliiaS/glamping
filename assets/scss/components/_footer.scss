@@ -4,6 +4,29 @@
     padding: 20px 0;
     background-color: rgba(116, 66, 36, 0.5);
 
+    &__wrapper {
+        @extend %flex-align-center;
+        justify-content: center;
+
+        @include breakpoint($breakpoint-md) {
+            flex-direction: column;
+        }
+    }
+
+    &__title {
+        margin-right: 20px;
+
+        font-size: 14px;
+        font-weight: 400;
+
+        @include breakpoint($breakpoint-md) {
+            margin-right: 0;
+            margin-bottom: 10px;
+
+            text-align: center;
+        }
+    }
+
     &__copyright {
         margin: 0;
 
@@ -20,7 +43,7 @@
     }
 
     @include breakpoint($breakpoint-md) {
-            padding: 15px 0;
+        padding: 15px 0;
     }
 
     @include breakpoint($breakpoint-sm) {

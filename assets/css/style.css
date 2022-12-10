@@ -27,7 +27,7 @@
   flex-direction: column;
 }
 
-.social, .territory__col, .about-glamping__col, .site-nav__link, .header__nav {
+.footer__wrapper, .social, .territory__col, .about-glamping__col, .site-nav__link, .header__nav {
   display: flex;
   align-items: center;
 }
@@ -1514,6 +1514,26 @@ input, textarea, select, button {
 .footer {
   padding: 20px 0;
   background-color: rgba(116, 66, 36, 0.5);
+}
+.footer__wrapper {
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .footer__wrapper {
+    flex-direction: column;
+  }
+}
+.footer__title {
+  margin-right: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .footer__title {
+    margin-right: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
 }
 .footer__copyright {
   margin: 0;
